@@ -1,0 +1,436 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <!-- basic -->
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <!-- mobile metas -->
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="viewport" content="initial-scale=1, maximum-scale=1">
+  <!-- site metas -->
+  <title>Escholar</title>
+  <meta name="keywords" content="">
+  <meta name="description" content="">
+  <meta name="author" content="">
+  <!-- fevicon -->
+  <link rel="icon" href="images/App Icon Escholar (1).png" type="image/gif" />
+  <!-- bootstrap css -->
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <script type="text/javascript" language="javascript" src="http://code.jquery.com/jquery-latest.js">
+  </script> 
+  <!-- style css -->
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/shortcodes.css">
+  <!-- Responsive-->
+  <link rel="stylesheet" href="css/responsive.css">  
+  <!-- Scrollbar Custom CSS -->
+  <link rel="stylesheet" href="css/jquery.mCustomScrollbar.min.css">
+  <!-- Tweaks for older IEs-->
+  <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/2.1.5/jquery.fancybox.min.css" media="screen">
+<!--[if lt IE 9]>
+<script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+<script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script><![endif]-->
+</head>
+<!-- body -->
+<script type="text/javascript" src="./js/textadj.js"></script>
+<body class="main-layout">
+  <!-- loader  -->
+  <!-- <div class="loader_bg">
+    <div class="loader"><img src="images/loading.gif" alt="#" /></div>
+  </div> -->
+  <!-- end loader -->
+
+  
+  
+  <main id="content" role="main">
+		<div id="description">
+
+
+  <!-- header -->
+  <header>
+    <!-- header inner -->
+    <div class="header-">
+      <div class="header">
+        <div class="container-fluid">
+          <div class="row">
+            <div class="col-xl-2 col-lg-4 col-md-4 col-sm-3 col logo_section">
+              <div class="full">
+                <div class="center-desk">
+                  <div class="logo">
+                    <a href="index.html"><img src="images/App Icon Escholar (1).png" alt="#" style="height: 100px; width: 100px;"/></a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-xl-10 col-lg-8 col-md-8 col-sm-9">
+              <div class="header_information">
+               <div class="menu-area">
+                <div class="limit-box">
+                  <nav class="main-menu ">
+                    <ul class="menu-area-main">
+                      <li class="active"> <a href="index.html">Home</a> </li>
+                      <li> <a href="#courses">Our Mission </a> </li>
+                      <li> <a href="#about">About Us</a> </li>
+                      <li> <a href="#learn">Vision</a> </li>
+                      <li> <a href="#important">Join Us</a> </li>
+                      <li> <a href="#contact">Contact Us</a> </li>
+                     <li><a href=""></a></li>
+                     <li><a href=""></a></li>
+                     <li><a href=""></a></li>
+                     <li><a href=""></a></li>
+                        <button type="button" class="decrease btn btn-sm btn-dark" value=" - ">A-</button>
+                        <button type="button" class="resetMe btn btn-sm btn-dark" value=" = ">A</button>
+                        <button type="button" class="increase btn btn-sm btn-dark" value="  +  ">A+</button>
+                        <li> <div class="dropdown">
+                          <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            language
+                          </button>
+                          <div class="dropdown-menu" aria-labelledby="dropdownMenuButton" style="background-color: rgb(44, 79, 235); ;">
+                            <a class="dropdown-item" href="#">Hindi</a>
+                            <a class="dropdown-item" href="#">Marathi</a>
+                            <!-- <a class="dropdown-item" href="#">Something else here</a> -->
+                          </div>
+                        </div>
+                      </li>
+                      </ul>
+                   </nav>
+                 </div>
+               </div> 
+               <!-- <div class="mean-last">
+                       <a href="#"><img src="images/search_icon.png" alt="#" /></a> </div>               -->
+             </div>
+           </div>
+         </div>
+       </div>
+     </div>
+      
+      
+       <script type="text/javascript">
+      $(document).ready(function(){        
+        var originalSize = $('div,p,span,li').css('font-size');         
+       // reset        
+        $(".resetMe").click(function(){           
+       $('div,p,span,li').css('font-size', originalSize);         
+        });
+      
+        // Increase Font Size          
+        $(".increase").click(function(){         
+       var currentSize = $('div,p,span,li').css('font-size');         
+       var currentSize = parseFloat(currentSize)*1.2;          
+       $('div,p,span,li').css('font-size', currentSize);         
+       return false;          
+       });        
+   
+        // Decrease Font Size       
+        $(".decrease").click(function(){        
+        var currentFontSize = $('div,p,span,li').css('font-size');        
+        var currentSize = $('div,p,span,li').css('font-size');        
+        var currentSize = parseFloat(currentSize)*0.8;        
+        $('div,p,span,li').css('font-size', currentSize);         
+        return false;         
+        });         
+      });
+      
+   </script>
+ </header>
+<style>
+    h1{
+        font-size: 30px;
+    }
+    p{
+        align-self: auto;
+        
+    }
+
+</style>
+<br>
+<br>
+<br>
+<br>
+<br>
+ 
+
+<div class="pd-about clearfix">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-12">
+                <div class="textbox-about">
+                    <div class="title-section">
+                        <div class="flat-title medium heading-type18">
+                          <h1>Subscriptions, Payments, and Cancellations</h1>
+                        </div>
+                    </div>
+                    <div class="textbox-content">
+                        <div class="about-introduce">
+                            <p>As per our company policy, unfortunately we can’t offer you a refund or exchange.
+                                We do not sell any physical good and do not send to customer given adderess.
+                                We have subscription based educational video which user can buy yearly.
+                                Our Subscription package price and packages are added dynamically. if you having any issue you can mail on support@escholarfoi.com</p>
+                        </div>
+                    </div>
+                    <div class="title-section">
+                        <div class="flat-title medium heading-type18">
+                         <h1>  Subscriptions</h1>
+                        </div>
+                    </div>
+                    <div class="textbox-content">
+                        <div class="about-introduce">
+                            <p>Users may subscribe to access any of the Services offered through the Site. EscholarFOI offers subscriptions for the Services on a paying basis ("Paid Subscription"):</p>
+                            <ul class="request">
+                                <li>Paid Subscriptions: We charge a subscription fee for many of the Services on the Site. You can pay for these Subscriptions on a monthly or annual basis ("Subscription Term"). The Subscription Term starts on the date you register for the Service and for monthly subscriptions, ends at the end of each month or for annual subscriptions, ends at the end of the month one year after the initial registration; we do not pro-rate for partial monthly or annual periods. For example, if you started a monthly plan on September 15, 2020, the initial Subscription Term would end September 30, 2020; if you started an annual plan on September 15, 2020, the initial Subscription Term would end on September 30, 2021. If you register for a Paid Subscription, we will ask you to provide a valid credit card for payment of the subscription fees. By providing your credit card, you authorize us to charge your credit card the subscription fees on a monthly or annual basis, depending on the plan you selected.</li>
+                                <li>School &amp; District Plans: Schools and school districts can contact EscholarFOI to arrange for a plan to be provided to students and teachers of that school or school district ("School &amp; District Plans"). Such plans are negotiated on an individual basis and subject to separate agreements, except that any authorized user under a School &amp; District Plan must agree to this Agreement in using the Site and Services provided under that plan.</li>
+                                <li>Authorized Users: Any Paid Subscription may only be accessed by the User who has registered for that subscription and may not be transferred to any other person or User without the written permission of EscholarFOI, except a parent or legal guardian may allow the child that they have registered to access and use their EscholarFOI Account and Account Credentials to access the Services. In the case of School &amp; District Plans, the school or school district is responsible for designating the authorized Users; no person may use the Services under a School &amp; District Plan without first being designated by the school or school district. The number of authorized Users under any single Subscription may not exceed the number of permitted seats paid under that Subscription ("Maximum Seats"). If an authorized User breaches this Agreement, EscholarFOI may terminate that authorized User’s access to the Services. Any use of the Services by a User not authorized under this Agreement or in excess of Maximum Seats shall constitute a breach of this Agreement, entitling EscholarFOI to terminate access by that User.</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="title-section">
+                        <div class="flat-title medium heading-type18">
+                           <h1> Pricing and Payments </h1>
+                        </div>
+                    </div>
+                    <div class="textbox-content">
+                        <div class="about-introduce">
+                            <p>Except in the case of School &amp; District Plans, the fees ("Subscription Fee") for Paid Subscriptions will be set forth on the page where you register for the Paid Subscription. EscholarFOI may change the Subscriptions Fee for Paid Subscriptions from time to time, and will communicate any such price changes to User. Subscription Fee changes for Paid Subscriptions will take effect at the start of the next Subscription Term following the date of the price change. By continuing to use the EscholarFOI Service after the Subscription Fee change takes effect, User accepts the new Subscription Fee (e.g., in the case of a monthly plan, the increase will take effect the following month; in the case of an annual plan, the increase will take effect on the next annual period). If a User does not agree to the Subscription Fee change, it should cancel the subscriptions on the User’s account before the end of the current Subscription Term.</p>
+                            <p>Our Paid Subscriptions renew automatically and so a User's payment to EscholarFOI for Subscription Fees will automatically renew at the end of each applicable Subscription Term, unless the Paid Subscription is cancelled by User through User's subscription page before the end of the current Subscription Term. The cancellation will take effect the day after the last day of the current Subscription Term However, if User cancels User's payment and/or terminates before the end of the Subscription Term, EscholarFOI will not refund any Subscription Fees already paid to EscholarFOI. Subscription Fees are non-refundable.</p>
+                            <p>User agrees to provide EscholarFOI with valid, up-to-date, and complete debit/credit card, contact, and billing details to make any payments for Paid Subscriptions. User further authorizes EscholarFOI to bill such debit/credit card on activation of the Paid Subscription and on the renewal of each Subscription Term. If, for any reason, User’s credit/debit card company refuses to pay the amount billed for the Services, User agrees that EscholarFOI may, at its option, suspend or terminate User’s subscription to the Services and require User to pay the overdue amount by other means acceptable to EscholarFOI. EscholarFOI may charge a fee for reinstatement of suspended or terminated accounts. User agrees that until its subscription to the Services is properly terminated, it will continue to accrue charges for which it remains responsible, even if it does not use the Services. In the event legal action is necessary to collect on balances due, User agrees to reimburse EscholarFOI for all expenses incurred to recover sums due, including attorney fees and other legal expenses. Unless otherwise expressly stated, all fees are stated in Indian rupees.</p>
+                        </div>
+                    </div>
+                    <div class="title-section">
+                        <div class="flat-title medium">
+                           <h1> Access and Use of EscholarFOI Services :</h1>
+                        </div>
+                    </div>
+                    <div class="title-section">
+                        <div class="flat-title medium heading-type18">
+                           <h2> User’s Access and Use of EscholarFOI Services </h2>
+                        </div>
+                    </div>
+                    <div class="textbox-content">
+                        <div class="about-introduce">
+                            <p>Provided a User is in compliance with this Agreement, including payment of all Subscription Fees, a User may access the Site, Services and any EscholarFOI Content provided on the Site, and the Services to which the User has subscribed for the User's personal, non-commercial use only. User's access to Services and EscholarFOI Content shall be for the applicable Subscription Term for the Paid Subscription purchased by User. The Services and EscholarFOI Content remain, at all times, the sole property of EscholarFOI or its third party licensors. All rights in the Services and EscholarFOI Content not expressly granted to User by EscholarFOI under this Agreement are retained by EscholarFOI.</p>
+                        </div>
+                    </div>
+                    <div class="title-section">
+                        <div class="flat-title medium heading-type18">
+                          <h2> Restrictions on Use </h2>
+                        </div>
+                    </div>
+                    <div class="textbox-content">
+                        <div class="about-introduce">
+                            <p>Except as permitted hereunder, or as permitted as a fair use under copyright law, User shall not copy, create derivative works, redistribute, retransmit, publish, or commercially exploit any of the Services or any of the EscholarFOI Content, resources, or tools on the Site or Services, without express permission in writing of EscholarFOI and the copyright owner. EscholarFOI strictly prohibits all commercial and/or unauthorized use of Services. User acknowledges and agrees that User may not use or resell Services for any commercial purpose, including, but not limited to, sending unsolicited commercial messages.</p>
+                            <p>User acknowledges and agrees that no ownership rights are conferred or acquired by User upon download of any EscholarFOI Content. User may not: (i) remove or alter any trademark, legends, symbols, labels, logos, copyright, or other proprietary notices on the Services or EscholarFOI Content; or (ii) reverse engineer, decompile, reverse assemble, or otherwise attempt to discover any source code or software used for the Services, except as otherwise permitted by applicable law.</p>
+                            <p>User may not copy, frame, or mirror any part of the Site nor access the Services for purposes of monitoring its availability, performance, or functionality. User also may not bypass the measures EscholarFOI may use to prevent or restrict access to the Site or the EscholarFOI Content, including, without limitation, features that prevent or restrict use or copying of any content or enforce limitations on use of the Site or the content therein. User may not retrieve and store or archive in electronic form, or any other form, any material part of the databases underlying the Services.</p>
+                            <p>User may not use Services in any manner that could overburden, disable, damage, or otherwise impair the Services (e.g., User may not access Services in an automated manner by use of "spiders," "robots," or otherwise), nor may User use Services in any manner that could interfere with any other party’s use and enjoyment of the Services. User may not attempt to disrupt, degrade, impair, or violate the integrity or security of the Site or the computers, services, accounts, or networks of any other party (including, without limitation, "hacking," "denial of service" attacks, etc.), including any activity that typically precedes attempts to breach security, such as scanning, probing, or other testing or vulnerability assessment activity, or engaging in or permitting any network or hosting activity that results in the blacklisting or other blockage of EscholarFOI internet protocol space. User may not execute any form of network monitoring or run a network analyzer or packet sniffer or other technology to intercept, decode, mine, or display any packets used to communicate between the Site's servers or any data not intended for User.</p>
+                        </div>
+                    </div>
+                    <div class="title-section">
+                        <div class="flat-title medium heading-type18">
+                          <h2>Use and Storage of User Data and Content </h2>
+                        </div>
+                    </div>
+                    <div class="textbox-content">
+                        <div class="about-introduce">
+                            <p>User agrees that EscholarFOI may establish general practices and limits concerning use of EscholarFOI Services, including, but not limited to, length of time User content is retained, volume of content or data that is stored, and the number of times and length of time a User may use the Services (collectively, “Additional Policies”). User agrees to abide by all such Additional Policies and that EscholarFOI may modify or alter these Additional Policies from time to time. In addition, User agrees that EscholarFOI has no responsibility or liability for the deletion or failure to store any messages, communications, performance data, and user-generated content maintained or transmitted by the Services. User acknowledges and accepts that EscholarFOI retains the right to deactivate or terminate User profiles or accounts at its discretion for reasons including, but not limited to, inactivity or inappropriate activity.</p>
+                        </div>
+                    </div>
+                    <div class="title-section">
+                        <div class="flat-title medium heading-type18">
+                          <h2>  Plagiarism</h2>
+                        </div>
+                    </div>
+                    <div class="textbox-content">
+                        <div class="about-introduce">
+                            <p>EscholarFOI reserves the right to provide its content to websites and services that will track whether User has plagiarized any EscholarFOI Content. EscholarFOI takes plagiarism extremely seriously and has a right to terminate use and to take legal action against any User who plagiarizes from the Site or Services. Plagiarism is a serious offense and directly opposes the purpose of EscholarFOI, which is to assist in educating Users, and to promote a deep, rigorous, and enjoyable learning experience on topics covered by EscholarFOI. EscholarFOI Content was not created to be a shortcut or opportunity to avoid class assignments, but rather, as a supportive companion in the learning process.</p>
+                        </div>
+                    </div>
+                    <div class="title-section">
+                        <div class="flat-title medium heading-type18">
+                          <h2>  Citing EscholarFOI</h2>
+                        </div>
+                    </div>
+                    <div class="textbox-content">
+                        <div class="about-introduce">
+                            <p>User must cite EscholarFOI if he or she uses the Site as a source for a paper, class project, publication, or any other use. The proper citation format for citing EscholarFOI is, by default, the citation convention appropriate for all websites. </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- contact -->
+<div id="contact" class="contact">
+    <div class="container-fluid padding_left2">
+      <div class="white_color">
+        <div class="row">
+  
+          <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12">
+            <div id="map">
+            </div>
+  
+          </div>
+          <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12">
+  
+            <form class="contact_bg">
+              <div class="row">
+                <div class="col-md-12">
+                  <div class="titlepage">
+                    <h2>Contact <strong class="yellow">us</strong></h2>
+                  </div>
+                  <div class="col-md-12">
+                    <input class="contactus" placeholder="Your Name" type="text" name="Your Name">
+                  </div>
+                  <div class="col-md-12">
+                    <input class="contactus" placeholder="Your Email" type="text" name="Your Email">
+                  </div>
+                  <div class="col-md-12">
+                    <input class="contactus" placeholder="Your Phone" type="text" name="Your Phone">
+                  </div>
+                  <div class="col-md-12">
+                    <textarea class="textarea" placeholder="Message" type="text" name="Message"></textarea>
+                  </div>
+                  <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12">
+                    <button class="send">Send</button>
+                  </div>
+                </div>
+              </form>
+            </div>
+          </div>
+  
+        </div>
+      </div>
+  
+      <!-- end contact -->
+  
+      <!--  footer -->
+      <footer>
+        <div class="footer ">
+          <div class="container">
+            <div class="row">
+  
+              <div class="col-md-12">
+                <form class="news">
+                  <input class="newslatter" placeholder="Email" type="text" name=" Email">
+                  <button class="submit">Subscribe</button>
+                </form>
+              </div>
+              <div class="col-md-12">
+                <h2>Newsletter</h2>
+                <span>Subscribe to our Newsletter  </span>
+              </div>
+              <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 ">
+                <div class="row">
+                  <div class="col-xl-3 col-lg-3 col-md-6 col-sm-6 ">
+                    <div class="address">
+                      <h3>Contact us </h3>
+                      <ul class="loca">
+                        <li>
+                          <a href="#"><img src="icon/loc.png" alt="#" /></a>Nagpur
+                          <br>India </li>
+                          <li>
+                            <a href="#"><img src="icon/email.png" alt="#" /></a>Escholar@gmail.com </li>
+                            <li>
+                              <a href="#"><img src="icon/call.png" alt="#" /></a>+916266584252 </li>
+                            </ul>
+                            <ul class="social_link">
+                              <li><a href="https://www.facebook.com/AnimatedEducation/"><img src="icon/fb.png"></a></li>
+                              <li><a href="#"><img src="icon/tw.png"></a></li>
+                              <li><a href="https://www.instagram.com/escholarfoi/?igshid=1ksblg8xaibxa"><img src="icon/lin(2).png"></a></li>
+                              <li><a href="#"><img src="icon/instagram.png"></a></li>
+                            </ul>
+  
+                          </div>
+                        </div>
+                        <div class="col-lg-3 col-md-6 col-sm-6">
+                          <div class="address">
+                            <h3>Help Links</h3>
+                            <ul class="Menu_footer">
+                              <li class="active"> <a href="terms.html">Terms and Conditions </a> </li>
+                              <li><a href="privacy.html">Privacy Policy</a> </li>
+                              <li><a href="refund.html">Refund Policy</a> </li>
+                            </ul>
+                          </div>
+                        </div>
+                        <div class="col-lg-3 col-md-6 col-sm-6">
+                          <div class="address">
+                            <h3>Site Map</h3>
+                            <ul class="Links_footer">
+                              <li class="active">
+                              <a href="index.html">Home</a> </li>
+                      <li> <a href="#courses">Our Mission </a> </li>
+                      <li> <a href="#about">About Us</a> </li>
+                      <li> <a href="#learn">Vision</a> </li>
+                      <li> <a href="#important">Join Us</a> </li>
+                      <li> <a href="#contact">Contact Us</a> </li>
+                            </ul>
+                          </div>
+                        </div>
+  
+                        <div class="col-lg-3 col-md-6 col-sm-6 ">
+                          <div class="address">
+                            <a href="index.html"> <img src="images/App Icon Escholar (1).png" alt="logo" style="height: 200px; width: 200px;"></a>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+  
+                  </div>
+  
+                </div>
+                <div class="copyright">
+                  <div class="container">
+                    <p>Copyright © 2021 Design by <a href="https://html.design/">Bumble Tech R Solutions</a></p>
+                  </div>
+                </div>
+              </div>
+            </footer>
+            <!-- end footer -->
+            <!-- Javascript files-->
+            <script src="js/jquery.min.js"></script>
+            <script src="js/popper.min.js"></script>
+            <script src="js/bootstrap.bundle.min.js"></script>
+            <script src="js/jquery-3.0.0.min.js"></script>
+            <script src="js/plugin.js"></script>
+            <!-- sidebar -->
+            <script src="js/jquery.mCustomScrollbar.concat.min.js"></script>
+            <script src="js/custom.js"></script>
+            <script src="https:cdnjs.cloudflare.com/ajax/libs/fancybox/2.1.5/jquery.fancybox.min.js"></script>
+  
+  
+            <script>
+  // This example adds a marker to indicate the position of Bondi Beach in Sydney,
+  // Australia.
+  function initMap() {
+    var map = new google.maps.Map(document.getElementById('map'), {
+      zoom: 11,
+      center: {
+        lat: 40.645037,
+        lng: -73.880224
+      },
+    });
+  
+    var image = 'images/maps-and-flags.png';
+    var beachMarker = new google.maps.Marker({
+      position: {
+        lat: 40.645037,
+        lng: -73.880224
+      },
+      map: map,
+      icon: image
+    });
+  }
+  </script>
+  <!-- google map js -->
+  <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyA8eaHt9Dh5H57Zh0xVTqxVdBFCvFMqFjQ&callback=initMap"></script>
+  <!-- end google map js -->
+  
+  </div>
+  <!--/#description-->
+  </main>
+  
+  </body>
+  
+  </html>

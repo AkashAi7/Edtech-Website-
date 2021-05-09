@@ -1,0 +1,746 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <!-- basic -->
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <!-- mobile metas -->
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="viewport" content="initial-scale=1, maximum-scale=1">
+  <!-- site metas -->
+  <title>Escholar</title>
+  <meta name="keywords" content="">
+  <meta name="description" content="">
+  <meta name="author" content="">
+  <!-- fevicon -->
+  <link rel="icon" href="images/App Icon Escholar (1).png" type="image/gif" />
+  <!-- bootstrap css -->
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <script type="text/javascript" language="javascript" src="http://code.jquery.com/jquery-latest.js">
+  </script> 
+  <!-- style css -->
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/shortcodes.css">
+  <!-- Responsive-->
+  <link rel="stylesheet" href="css/responsive.css">  
+  <!-- Scrollbar Custom CSS -->
+  <link rel="stylesheet" href="css/jquery.mCustomScrollbar.min.css">
+  <!-- Tweaks for older IEs-->
+  <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/2.1.5/jquery.fancybox.min.css" media="screen">
+<!--[if lt IE 9]>
+<script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+<script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script><![endif]-->
+</head>
+<!-- body -->
+<script type="text/javascript" src="./js/textadj.js"></script>
+<body class="main-layout">
+  <!-- loader  -->
+  <!-- <div class="loader_bg">
+    <div class="loader"><img src="images/loading.gif" alt="#" /></div>
+  </div> -->
+  <!-- end loader -->
+
+  
+  
+  <main id="content" role="main">
+		<div id="description">
+
+
+  <!-- header -->
+  <header>
+    <!-- header inner -->
+    <div class="header-">
+      <div class="header">
+        <div class="container-fluid">
+          <div class="row">
+            <div class="col-xl-2 col-lg-4 col-md-4 col-sm-3 col logo_section">
+              <div class="full">
+                <div class="center-desk">
+                  <div class="logo">
+                    <a href="index.html"><img src="images/App Icon Escholar (1).png" alt="#" style="height: 100px; width: 100px;"/></a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-xl-10 col-lg-8 col-md-8 col-sm-9">
+              <div class="header_information">
+               <div class="menu-area">
+                <div class="limit-box">
+                  <nav class="main-menu ">
+                    <ul class="menu-area-main">
+                      <li class="active"> <a href="index.html">Home</a> </li>
+                      <li> <a href="#courses">Our Mission </a> </li>
+                      <li> <a href="#about">About Us</a> </li>
+                      <li> <a href="#learn">Vision</a> </li>
+                      <li> <a href="#important">Join Us</a> </li>
+                      <li> <a href="#contact">Contact Us</a> </li>
+                     <li><a href=""></a></li>
+                     <li><a href=""></a></li>
+                     <li><a href=""></a></li>
+                     <li><a href=""></a></li>
+                        <button type="button" class="decrease btn btn-sm btn-dark" value=" - ">A-</button>
+                        <button type="button" class="resetMe btn btn-sm btn-dark" value=" = ">A</button>
+                        <button type="button" class="increase btn btn-sm btn-dark" value="  +  ">A+</button>
+                        <li> <div class="dropdown">
+                          <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            language
+                          </button>
+                          <div class="dropdown-menu" aria-labelledby="dropdownMenuButton" style="background-color: rgb(44, 79, 235); ;">
+                            <a class="dropdown-item" href="#">Hindi</a>
+                            <a class="dropdown-item" href="#">Marathi</a>
+                            <!-- <a class="dropdown-item" href="#">Something else here</a> -->
+                          </div>
+                        </div>
+                      </li>
+                      </ul>
+                   </nav>
+                 </div>
+               </div> 
+               <!-- <div class="mean-last">
+                       <a href="#"><img src="images/search_icon.png" alt="#" /></a> </div>               -->
+             </div>
+           </div>
+         </div>
+       </div>
+     </div>
+      
+      
+       <script type="text/javascript">
+      $(document).ready(function(){        
+        var originalSize = $('div,p,span,li').css('font-size');         
+       // reset        
+        $(".resetMe").click(function(){           
+       $('div,p,span,li').css('font-size', originalSize);         
+        });
+      
+        // Increase Font Size          
+        $(".increase").click(function(){         
+       var currentSize = $('div,p,span,li').css('font-size');         
+       var currentSize = parseFloat(currentSize)*1.2;          
+       $('div,p,span,li').css('font-size', currentSize);         
+       return false;          
+       });        
+   
+        // Decrease Font Size       
+        $(".decrease").click(function(){        
+        var currentFontSize = $('div,p,span,li').css('font-size');        
+        var currentSize = $('div,p,span,li').css('font-size');        
+        var currentSize = parseFloat(currentSize)*0.8;        
+        $('div,p,span,li').css('font-size', currentSize);         
+        return false;         
+        });         
+      });
+      
+   </script>
+ </header>
+<style>
+    h1{
+        font-size: 30px;
+    }
+    p{
+        align-self: auto;
+        
+    }
+
+</style>
+<br>
+<br>
+<br>
+<br>
+<br>
+
+<div class="pd-about clearfix">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-12">
+                <div class="textbox-about">
+                    <div class="title-section">
+                        <div class="flat-title medium heading-type18">
+                            EscholarFOI Privacy Policy
+                        </div>
+                    </div>
+                    <div class="textbox-content">
+                        <div class="about-introduce">
+                            <p>As of April 28, 2020</p>
+                            <p>EscholarFOI's Privacy Policy ("Privacy Policy") is designed to help you understand what information we collect from you and how that information is used by EscholarFOI, Inc. (collectively, "EscholarFOI", "we", "us", or "our"). Your trust and confidence are essential to our success. EscholarFOI respects your privacy and will not sell or share your personally identifiable information with another party without your expressed consent, other than as described in "Exceptions to Sharing Personally Identifiable Information" below.</p>
+                            <p>This Privacy Policy applies to the websites and domains on which it is posted, including, but not limited to, www.EscholarFOI.com (the "Site") and to the various education tools and services we offer on the Site (the "Services"). It does not cover:</p>
+                            <ul class="request">
+                                <li>Information collected by third-party websites linked from EscholarFOI</li>
+                                <li>Information collected off-line</li>
+                            </ul>
+                            <p>Your use of the EscholarFOI Site and Services constitutes your consent to this Privacy Policy and EscholarFOI's <a href="terms.php" class="text-orange font-100">Terms of Use.</a> Capitalized terms in this Privacy Policy either have the meanings given them in this Privacy Policy or in the Terms of Use.</p>
+                            <p>EscholarFOI may revise this Privacy Policy from time to time to accurately reflect the EscholarFOI Site and EscholarFOI Services and our privacy practices or changes in the law. Please review this Policy frequently for any changes. The most current version of the Privacy Policy will govern our use of information about you and will be located at <span class="text-orange">https://www.EscholarFOI.com/privacy-policy</span>. If EscholarFOI makes material changes to this Privacy Policy, we will notify you by posting a notice on the Site or sending an email to the email address we have on file for you or that you provided in your EscholarFOI account. Please ensure your email address remains current so you will receive updates. If you have any questions about this Privacy Policy, please email us at <a href="mailto:support@escholarfoi.com" class="text-orange font-100"> support@escholarfoi.com</a>.</p>
+                            <p>Please note that if you are a resident of the European Union or California, you have additional rights as set forth below.</p>
+                        </div>
+                    </div>
+                    <div class="title-section">
+                        <div class="flat-title medium heading-type18">
+                            Information We Collect
+                        </div>
+                    </div>
+                    <div class="textbox-content">
+                        <div class="about-introduce">
+                            <p>We collect two types of information from you:</p>
+                            <ul class="request">
+                                <li>Information you voluntarily provide when registering or participating in activities or using Services on EscholarFOI; and</li>
+                                <li>Information collected automatically by using cookies and other tracking technologies from your computer or other device that you use to access the Site or Services, including your geographic location when you use EscholarFOI.</li>
+                            </ul>
+                            <p>All personally identifiable information collected from the Site or through the Services will not be shared with any other entity without your expressed consent, other than as described in "Exceptions to Sharing Personally Identifiable Information" below.</p>
+                        </div>
+                    </div>
+                    <div class="title-section">
+                        <div class="flat-title medium heading-type18">
+                            Registration
+                        </div>
+                    </div>
+                    <div class="textbox-content">
+                        <div class="about-introduce">
+                            <p>To use some parts of our Site or certain of our Services, you must register with EscholarFOI and create an account ("Registration Information"). When you register, we collect personally identifiable information such as your name and email address. You may provide other personally identifiable information voluntarily (e.g., year in school, gender), but it is not required for registration. If you register for a subscription or purchase a product at our Site, then we may collect credit card and debit card information to provide to our payment processor, including credit/debit card numbers, expiration dates, CV numbers, billing address, shipping address, date of order, payment information, and the product or subscription ordered.
+                                We use this Registration Information to contact you about the Services on our Site about which you have expressed interest, to process subscriptions, and provide you the Services you have purchased or for which you have registered.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="title-section">
+                        <div class="flat-title medium heading-type18">
+                            Other Voluntarily Submitted Information - User Generated Content
+                        </div>
+                    </div>
+                    <div class="textbox-content">
+                        <div class="about-introduce">
+                            <p>The Services also allow users to submit information and content through the Site and in connection with the Services. This includes, but is not limited to the following:</p>
+                            <ul class="request">
+                                <li>Any response, content, or information you provide in connection with the Services. For example, we collect your answers to test prep questions, essays you might write, responses to survey questions or polls, responses to assessment questions in the Heartbeat™ tool, and notes and other content you create.</li>
+                                <li>We track your progress and performance in connection with the Services you use.</li>
+                                <li>We collect your contact and other information you provide when providing us feedback, making inquiries, or asking for customer support.</li>
+                                <li>We collect the optional profile information that you wish to share with other users of the Site and Services.</li>
+                                <li>We collect other information that you submit voluntarily through our EscholarFOI message boards, notes, conversations, and other communications.</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="title-section">
+                        <div class="flat-title medium heading-type18">
+                            Automatically Collected Information
+                        </div>
+                    </div>
+                    <div class="textbox-content">
+                        <div class="about-introduce">
+                            <p>In addition to the information you voluntarily send us while visiting EscholarFOI, like most websites, we gather certain information automatically and store it in log files. This information includes, but is not limited to, internet protocol (IP) addresses, browser type, internet service provider (ISP), referring/exit pages, operating system, mobile device ID, advertising identifiers, date/time stamp, and clickstream data.</p>
+                            <p>We use this information, which does not identify individual users, to analyze trends, administer the site, track users’ movements around the site, and to gather demographic information about our user base as a whole. We may link this automatically-collected data to personally identifiable information.</p>
+                            <p>EscholarFOI uses third-party products called Google Analytics, Google AdSense, HotJar and Rhapsody that use cookies and/or other tracking mechanisms embedded in our pages to track non-personally identifiable information about visitors to our Site in the aggregate, such as total visitors to the site and length of visit. We use this usage information for internal purposes. We do not share your personally identifiable information with these third parties.</p>
+                        </div>
+                    </div>
+                    <div class="title-section">
+                        <div class="flat-title medium heading-type18">
+                            Our Use of Information
+                        </div>
+                    </div>
+                    <div class="textbox-content">
+                        <div class="about-introduce">
+                            <p>We use the information that we collect on our Site and through the Services for the following purposes:</p>
+                            <ul class="request">
+                                <li>provide access to the Site and to provide you with requested Services and customer support and to process and respond to your inquiries;</li>
+                                <li>personalize, customize, measure, and improve our Services, content, and advertising and otherwise to enhance your experience of the Site;</li>
+                                <li>prevent, detect, and investigate potentially prohibited or illegal activities or a breach of the EscholarFOI Terms of Use;</li>
+                                <li>analyze the accuracy, effectiveness, usability, or popularity of the Site and Services;</li>
+                                <li>generate and review reports and data about our user base and service usage patterns;</li>
+                                <li>compile aggregate data for internal and external business purposes;</li>
+                                <li>resolve disputes and troubleshoot problems;</li>
+                                <li>enforce our Terms of Use;</li>
+                                <li>contact you with information, including promotional, marketing, and advertising information and recommendations that we believe may be of interest to you;</li>
+                                <li>Provide you with other services requested by you as described when we collect the information; and take any other action as otherwise stated in this Privacy Policy.</li>
+                            </ul>
+                            <p>We do not share personally identifiable information with third parties without your expressed consent, other than as described in "Exceptions to Sharing Personally Identifiable Information" below. We may provide information in the aggregate about our users to third parties for other purposes, but in this case, all personally identifiable information will be removed.</p>
+                        </div>
+                    </div>
+                    <div class="title-section">
+                        <div class="flat-title medium heading-type18">
+                            Children's Privacy
+                        </div>
+                    </div>
+                    <div class="textbox-content">
+                        <div class="about-introduce">
+                            <p>We are committed to protecting the privacy of persons less than 13 years of age ("child" or "children") who use our Site or Services. EscholarFOI does not knowingly permit any child to register directly for the Site or Services unless we reasonably believe, or have received assurances from the subscribing user or in the case of use under a plan with an educational institution, the administrator, that the child’s parent has consented to such registration and use of the Site and Services. If EscholarFOI learns that personally identifiable information of a child has been collected on the Site without parental consent, then we will take appropriate steps to delete this information. If you are a parent or guardian and discover that your child has a registered account with the Site without your consent, please email EscholarFOI at <a href="mailto:support@escholarfoi.com" class="text-orange font-100"> support@escholarfoi.com</a> and request that EscholarFOI delete that child's personally identifiable information from its systems.</p>
+                        </div>
+                    </div>
+                    <div class="title-section">
+                        <div class="flat-title medium heading-type18">
+                            Registration and Use of the Site
+                        </div>
+                    </div>
+                    <div class="textbox-content">
+                        <div class="about-introduce">
+                            <p>When a child requests to register for the Site or Services, EscholarFOI will seek consent from the child's identified parent or guardian ("Parent"). We may ask the child to provide certain information for notification and security purposes, including the Parent's email address, the child’s first name and gender, the child’s username, and password. We may also ask for birth dates from children to validate their ages. Please note that children can choose whether to share their information with us, but certain features cannot function without it. As a result, children may not be able to access certain features if required information has not been provided. We will not require a child to provide more information than is reasonably necessary in order to participate in an online activity. Parents may also agree to the collection and use of their child’s information, but not allow disclosure to third parties.</p>
+                        </div>
+                    </div>
+                    <div class="title-section">
+                        <div class="flat-title medium heading-type18">
+                            Email Contact with a Child
+                        </div>
+                    </div>
+                    <div class="textbox-content">
+                        <div class="about-introduce">
+                            <p>In order to respond to a question or request from a child, EscholarFOI may need to ask for the child’s online contact information, such as an email address. EscholarFOI will delete this information immediately after responding to the question or request.</p>
+                            <p>In connection with certain activities or services, we may collect a child’s online contact information, such as an email address, in order to communicate with the child more than once. In such instances we will retain the child’s online contact information to honor the request and for no other purpose such as marketing. Whenever we collect a child’s online contact information for ongoing communications, we will simultaneously require a Parent email address in order to notify the Parent about the collection and use of the child’s information, as well as to provide the Parent an opportunity to prevent further contact with the child. On some occasions a child may be engaged in more than one ongoing communication, and a Parent may be required to "opt-out" of each communication individually.</p>
+                        </div>
+                    </div>
+                    <div class="title-section">
+                        <div class="flat-title medium heading-type18">
+                            Persistent identifiers:
+                        </div>
+                    </div>
+                    <div class="textbox-content">
+                        <div class="about-introduce">
+                            <p>When children interact with us, certain information may automatically be collected, both to make our Site and Services more interesting and useful to children and for various purposes related to our business. As discussed in this Privacy Policy, examples include the type of computer operating system, the child’s IP address or mobile device identifier, the web browser, the frequency with which the child visits various parts of our Site, and information regarding the online or mobile service provider. This information is collected using technologies such as cookies, flash cookies, web beacons, and other unique identifiers (which we define under the “Cookies; Do Not Track” section of this Privacy Policy). This information may be collected by EscholarFOI or by third-party businesses for the purposes explained in the "Cookies; Do Not Track" section of this Privacy Policy.</p>
+                        </div>
+                    </div>
+                    <div class="title-section">
+                        <div class="flat-title medium heading-type18">
+                            When Information Collected from Children is Available to Others
+                        </div>
+                    </div>
+                    <div class="textbox-content">
+                        <div class="about-introduce">
+                            <p>In addition to those instances where a child’s personally identifiable information is posted publicly (after receiving verifiable parental consent), we also may share or disclose personally identifiable information collected from children in a limited number of instances, including the following:</p>
+                            <ul class="request">
+                                <li>We may share information with our service providers if it is necessary for them to perform a technology support function for us, or for other legitimate educational purposes.</li>
+                                <li>We may disclose personally identifiable information if permitted or required by law, for example, in response to a court order or a subpoena. To the extent permitted by applicable law, we also may disclose personally identifiable information collected from children (i) in response to a law enforcement or public agency’s (including schools or children services) request; (ii) if we believe disclosure may prevent the instigation of a crime, facilitate an investigation related to public safety or protect the safety of a child using our Site; (iii) to protect the security or integrity of our Site, Services and other technology, as well as the technology of our service providers; or (iv) enable us to take precautions against liability.</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="title-section">
+                        <div class="flat-title medium heading-type18">
+                            Parental Choices and Control
+                        </div>
+                    </div>
+                    <div class="textbox-content">
+                        <div class="about-introduce">
+                            <p>At any time, parents can refuse to permit us to use and collect further personally identifiable information from their children in association with a particular account, and can request that we delete from our records the personally identifiable information we have collected in connection with that account. Please keep in mind that a request to delete records may lead to a termination of an account, membership, or other service.</p>
+                            <p>Where a child has registered for a EscholarFOI account, we use two methods to allow Parents to access, change, or delete the personally identifiable information that we have collected from their children:</p>
+                            <ul class="request">
+                                <li>Parents can request access to and delete their child’s personally identifiable information by logging onto the child’s account. Parents will need their child’s username and password.</li>
+                                <li>Parents can contact us to request access to, change, or delete their child’s personally identifiable information at <a href="mailto:support@escholarfoi.com" class="text-orange font-100"> support@escholarfoi.com</a>.</li>
+                            </ul>
+                            <p>In any correspondence such as email or mail, please include the child’s username and the Parent’s email address and telephone number. To protect children’s privacy and security, we will take reasonable steps to help verify a Parent’s identity before granting access to any personally identifiable information.</p>
+                            <p>We will retain your child’s information for as long as their account is active or as needed to provide them services. If you wish to cancel your child’s account or request that we no longer use that information to provide them Services, please contact us at <a href="mailto:support@escholarfoi.com" class="text-orange font-100"> support@escholarfoi.com</a>. We will retain and use their information as necessary to comply with our legal obligations, resolve disputes, and enforce our agreements.</p>
+                            <p>If we make material changes to how we use personally identifiable information collected from children, we will notify parents by email in order to obtain parental consent for the new uses of the child’s personally identifiable information.</p>
+                        </div>
+                    </div>
+                    <div class="title-section">
+                        <div class="flat-title medium heading-type18">
+                            Our Communication with You
+                        </div>
+                    </div>
+                    <div class="textbox-content">
+                        <div class="about-introduce">
+                            <p>After you register with EscholarFOI, we may contact you in several ways. Please see our <a href="contact-us.php" class="text-orange font-100">contact us</a> page to opt-out of specific types of messages.</p>
+                        </div>
+                    </div>
+                    <div class="title-section">
+                        <div class="flat-title medium heading-type18">
+                            Customer Service
+                        </div>
+                    </div>
+                    <div class="textbox-content">
+                        <div class="about-introduce">
+                            <p>When you register, we will send you a welcome message from EscholarFOI. We may also respond to your customer service inquiries, your suggestions, or your requests to manage your account. We will communicate with you by email or phone, in accordance with your preferences.</p>
+                        </div>
+                    </div>
+                    <div class="title-section">
+                        <div class="flat-title medium heading-type18">
+                            Special Offers
+                        </div>
+                    </div>
+                    <div class="textbox-content">
+                        <div class="about-introduce">
+                            We may send our users emails with information about special offers and promotions. You may opt-out of such communications at the time of registration and on our <a href="contact-us.php" class="text-orange font-100">Contact</a> page or by using the unsubscribe mechanism in the email.
+                        </div>
+                    </div>
+                    <div class="title-section">
+                        <div class="flat-title medium heading-type18">
+                            Newsletters, Product Updates, and Notifications
+                        </div>
+                    </div>
+                    <div class="textbox-content">
+                        <div class="about-introduce">
+                            <p>We may send our users newsletters, product updates, and other marketing-related notifications by email. You may opt-out from such communication on our <a href="contact-us.php" class="text-orange font-100">Contact</a> page or by using the unsubscribe mechanism in the email.</p>
+                        </div>
+                    </div>
+                    <div class="title-section">
+                        <div class="flat-title medium heading-type18">
+                            Service Announcements
+                        </div>
+                    </div>
+                    <div class="textbox-content">
+                        <div class="about-introduce">
+                            We may send our users updates regarding the Service or their account. These are sent to all registrants of EscholarFOI on occasions when a significant service change or disruption occurs. You cannot opt-out of such Service-related or account-related emails.
+                        </div>
+                    </div>
+                    <div class="title-section">
+                        <div class="flat-title medium heading-type18">
+                            Accessing, Changing and Managing Your Information
+                        </div>
+                    </div>
+                    <div class="textbox-content">
+                        <div class="about-introduce">
+                            You can access or change your personal profile and contact information or delete your account by either logging into your account or contacting customer service at <a href="mailto:support@escholarfoi.com" class="text-orange font-100"> support@escholarfoi.com</a>.
+                        </div>
+                    </div>
+                    <div class="title-section">
+                        <div class="flat-title medium heading-type18">
+                            Security of Your Information
+                        </div>
+                    </div>
+                    <div class="textbox-content">
+                        <div class="about-introduce">
+                            The security of your information is important to us. We use a number of measures to help protect the security of the personally identifiable information submitted to us. However, no method of transmission over the Internet, or method of electronic storage, is 100% secure. Therefore, we cannot guarantee its absolute security and any information you transmit to EscholarFOI or submit through the Site or the Services is done so at your own risk. If you have questions about security on our Site or Services, please contact us at <a href="mailto:support@escholarfoi.com" class="text-orange font-100"> support@escholarfoi.com</a>.
+                        </div>
+                    </div>
+                    <div class="title-section">
+                        <div class="flat-title medium heading-type18">
+                            Sharing Information within EscholarFOI
+                        </div>
+                    </div>
+                    <div class="title-section mb-0">
+                        <div class="flat-title small">
+                            Message Board, Site Sharing Features and Site Contributions
+                        </div>
+                    </div>
+                    <div class="textbox-content">
+                        <div class="about-introduce">
+                            <p>When you use our Site or Services, you have the option to make contributions including, but not limited to, your notes, comments, creative works, or information about yourself, available to other visitors to our Site or Services.</p>
+                            <p>We will, generally, provide you with the option to control the privacy of your contributions or remove your contributions from the Site or Services.</p>
+                            <p>If you use EscholarFOI’s message boards, chat rooms, conversations, or other Services on the EscholarFOI site, please be aware that any personally identifiable information you submit there can be read, collected, or used by other users of these forums, and could be used to send you unsolicited messages. We are not responsible for the personally identifiable information you choose to submit in these forums.</p>
+                            <p>If you have not removed or marked private any given piece of identifiable information, EscholarFOI will assume that you are aware that it is viewable by other users of EscholarFOI and the public at large.</p>
+                            <p>If you have further questions about your contributions to this Site, please contact us.</p>
+                        </div>
+                    </div>
+                    <div class="title-section">
+                        <div class="flat-title medium heading-type18">
+                        Sharing of Personally Identifiable Information
+                        </div>
+                    </div>
+                    <div class="textbox-content">
+                        <div class="about-introduce">
+                        <p>We may disclose your personally identifiable information for certain business and other purposes set forth below.</p>
+                        </div>
+                    </div>
+                    <div class="title-section">
+                        <div class="flat-title medium heading-type18">
+                        Service Providers
+                        </div>
+                    </div>
+                    <div class="textbox-content">
+                        <div class="about-introduce">
+                        <p>We provide personally identifiable information to third parties that provide services related to the Site and Services or perform certain activities or functions on our behalf. For example, we use an outside shipping company to fulfill orders, and a credit card processing company to bill you for goods and services. These companies may only use the personally identifiable information to provide such services and perform such functions, and do not retain, share, store, or use personally identifiable information for any other purposes.</p>
+                        </div>
+                    </div>
+                    <div class="title-section">
+                        <div class="flat-title medium heading-type18">
+                        Other Users
+                        </div>
+                    </div>
+                    <div class="textbox-content">
+                        <div class="about-introduce">
+                        <p>Information that you post on the Site and Services (e.g., comments, notes, creative works, and information about yourself) will be made available to other users of the Site.</p>
+                        </div>
+                    </div>
+                    <div class="title-section">
+                        <div class="flat-title medium heading-type18">
+                        Schools and School Districts
+                        </div>
+                    </div>
+                    <div class="textbox-content">
+                        <div class="about-introduce">
+                        <p>Certain of the Services are provided to user under contracts we have with schools and school districts. In such cases, your personally identifiable information, including any content or responses you provide in connection with the Services, such as responses to the Heartbeat™ tool, will be disclosed to the school and school district, and their teachers, administrators and other personnel as applicable.</p>
+                        </div>
+                    </div>
+                    <div class="title-section">
+                        <div class="flat-title medium heading-type18">
+                        Our Affiliates
+                        </div>
+                    </div>
+                    <div class="textbox-content">
+                        <div class="about-introduce">
+                        <p>EscholarFOI may share some or all of your information with our parent company, subsidiaries and corporate affiliates, joint ventures or other companies under common control with us.</p>
+                        </div>
+                    </div>
+                    <div class="title-section">
+                        <div class="flat-title medium heading-type18">
+                        Legal Purposes
+                        </div>
+                    </div>
+                    <div class="textbox-content">
+                        <div class="about-introduce">
+                        <p>EscholarFOI may disclose personally identifiable information as required by law or to comply with a judicial proceeding, court order, or legal process served on our company. In addition, we reserve the right to disclose your personally identifiable information when we believe that such disclosure is necessary to protect our rights, safety, or property, or the rights, safety, or property of service providers or others. We also may disclose personally identifiable information to third parties in order to resolve disputes that arise in the normal course of business.</p>
+                        </div>
+                    </div>
+                    <div class="title-section">
+                        <div class="flat-title medium heading-type18">
+                        Business Transitions
+                        </div>
+                    </div>
+                    <div class="textbox-content">
+                        <div class="about-introduce">
+                        <p>In the event that EscholarFOI University, Inc., goes through a business transition, such as a merger, acquisition by another company, or sale of all or a portion of its assets, or the transfer of the business or assets in a bankruptcy or similar proceeding, the acquirer would have access to or acquire the information maintained by EscholarFOI University, Inc., which could include personally identifiable information submitted by or collected from users and visitors to our Site and Services.</p>
+                        </div>
+                    </div>
+                    <div class="title-section">
+                        <div class="flat-title medium heading-type18">
+                        Third Party Advertisers
+                        </div>
+                    </div>
+                    <div class="textbox-content">
+                        <div class="about-introduce">
+                        <p>Some advertisements appearing on our Site are delivered by Google Inc. ("Google"). Google uses cookies and clear GIF images on this site, which allow it to recognize a user’s cookie when a user visits this Site. The information that Google collects and shares through this technology is not personally identifiable information. For more information about our third-party advertisers, or to learn more about the choices available to you regarding this anonymous information please visit <span class="text-orange">Google's Privacy Policy</span>. Using the Ads Settings, visitors can opt-out of Google Analytics for Display Advertising and customize Google Display Network ads.</p>
+                        <p>We use third-party advertising companies such as Google DFP to serve ads when you visit our Site. These companies may use aggregated information (not including your name, address, email address or telephone number) about your visits to this and other websites in order to provide advertisements about goods and services of interest to you. While this information will not identify you personally, in some instances these third parties may be able to combine this information with other data they have about you, or that they receive from third parties, in a manner that allows them to associate this aggregated data with your personally identifiable information. Please refer to Google’s documentation for more information on their policies: <a href="https://www.google.com/policies/technologies/ads/" class="text-orange font-100">https://www.google.com/policies/technologies/ads/</a>. </p>
+                        </div>
+                    </div>
+                    <div class="title-section">
+                        <div class="flat-title medium heading-type18">
+                        eScholaFOI
+                        </div>
+                    </div>
+                    <div class="textbox-content">
+                        <div class="about-introduce">
+                        <p>When you use our website, we share information that we may collect from you, such as your email (in hashed form), IP address or information about your browser or operating system, with our partner/service provider, eScholaFOI and its group companies ('eScholaFOI'). eScholaFOI may use our first party cookie on your browser to match your shared information to their marketing databases in order to provide back a pseudonymous privacy-centric identifier for our use in real time bidding in digital advertising. These third parties may in turn link further demographic or interest-based information to your browser. </p>
+                        </div>
+                    </div>
+                    <div class="title-section">
+                        <div class="flat-title medium heading-type18">
+                        Links to Other Sites
+                        </div>
+                    </div>
+                    <div class="textbox-content">
+                        <div class="about-introduce">
+                        <p>This Site contains links to other sites that are not owned or controlled by EscholarFOI University, Inc. Please be aware that we are not responsible for the privacy practices of those other sites. We encourage you to be aware of this when you leave our Site, and to read the privacy statements of each and every website that collects personally identifiable information. This privacy statement applies only to information collected by this Site or the Services.</p>
+                        </div>
+                    </div>
+                    <div class="title-section">
+                        <div class="flat-title medium heading-type18">
+                        Cookies; Do Not Track
+                        </div>
+                    </div>
+                    <div class="textbox-content">
+                        <div class="about-introduce">
+                        <p>EscholarFOI, along with our third-party service partners, vendors, and business partners may use cookies, locally stored objects, and web beacons to automatically collect information about your use of the Site. A cookie is a small text file that is stored on a user's computer for record-keeping purposes. We use both "persistent cookies," which remain on your computer after you have closed your browser as well as "session cookies," which exist only during a visitor’s online session and disappear from your computer when you close your browser. Locally stored objects or "flash cookies" are data files that can be created on your computer by the websites you visit and are a way for websites to store information for later use. Locally stored objects are different than cookies because they are stored in different parts of your computer than cookies. Web beacons are small strings of code that provide a method for delivering a graphic image on a web page or in an email message for the purpose of transferring data. We use cookies, locally stored objects, and web beacons to make your experience with our Site more efficient and customized. Our cookies do not include any sensitive information, but they do help us learn which of our Site pages are visited and what tools and Services are most often used. Please note that in order to use EscholarFOI, your web browser must be configured to accept cookies.</p>
+                        <p>The Site may include links to other websites and other content from third-party businesses. We permit third parties to track your actions through cookies and web beacons over time and across different websites or platforms.</p>
+                        <p>In addition, you may be able to adjust your browser settings or other settings so that "do not track" requests are sent to the websites and mobile applications that you use. However, EscholarFOI will not disable tracking technology that may be active on the Site in response to any "do not track" requests that are sent to the Site.</p>
+                        </div>
+                    </div>
+                    <div class="title-section">
+                        <div class="flat-title medium heading-type18">
+                        Testimonials and User Feedback
+                        </div>
+                    </div>
+                    <div class="textbox-content">
+                        <div class="about-introduce">
+                        <p>From time to time, we will publish comments from users who have shared positive testimonials about our Site and Services. When we publish such content, we will identify those users only by their first and last name or a screenname, and their city, state, and school. We may also re-tweet your feedback and testimonials through our Twitter account, provided that we will not re-tweet feedback and testimonials from children under 13 without parental consent.</p>
+                        </div>
+                    </div>
+                    <div class="title-section">
+                        <div class="flat-title medium heading-type18">
+                        Notice of Disclosures of Personal Information for a Business Purpose
+                        </div>
+                    </div>
+                    <div class="textbox-content">
+                        <div class="about-introduce">
+                        <p>In the preceding 12 months, we disclosed certain data from the following categories of personally identifiable information to third parties listing in: “Exceptions to Sharing Personally Identifiable Information” of our Privacy Policy, such as schools and school districts and other users if you have posted this information in public areas of the Site and Services, for one or more business purposes:</p>
+                        <ul class="request">
+                        <li>A. Identifiers;</li>
+                        <li>B. Personal information categories;</li>
+                        <li>J. Non-public education information;</li>
+                        </ul>
+                        <p>We also disclose this information to our service providers. When we disclose personally identifiable information for a business purpose to a service provider, we enter a contract that describes the purpose and requires the recipient to both keep that personally identifiable information confidential and not use it for any purpose except performing the contract.</p>
+                        </div>
+                    </div>
+                    <div class="title-section">
+                        <div class="flat-title medium heading-type18">
+                        Contact Us
+                        </div>
+                    </div>
+                    <div class="textbox-content">
+                        <div class="about-introduce">
+                        <p>If you have any questions or suggestions regarding our Privacy Policy, please use our online form to <a href="contact-us.php" class="text-orange font-100">contact us</a>. You may also email <a href="mailto:support@escholarfoi.com" class="text-orange font-100"> support@escholarfoi.com</a> or send postal mail to:</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- contact -->
+<div id="contact" class="contact">
+    <div class="container-fluid padding_left2">
+      <div class="white_color">
+        <div class="row">
+  
+          <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12">
+            <div id="map">
+            </div>
+  
+          </div>
+          <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12">
+  
+            <form class="contact_bg">
+              <div class="row">
+                <div class="col-md-12">
+                  <div class="titlepage">
+                    <h2>Contact <strong class="yellow">us</strong></h2>
+                  </div>
+                  <div class="col-md-12">
+                    <input class="contactus" placeholder="Your Name" type="text" name="Your Name">
+                  </div>
+                  <div class="col-md-12">
+                    <input class="contactus" placeholder="Your Email" type="text" name="Your Email">
+                  </div>
+                  <div class="col-md-12">
+                    <input class="contactus" placeholder="Your Phone" type="text" name="Your Phone">
+                  </div>
+                  <div class="col-md-12">
+                    <textarea class="textarea" placeholder="Message" type="text" name="Message"></textarea>
+                  </div>
+                  <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12">
+                    <button class="send">Send</button>
+                  </div>
+                </div>
+              </form>
+            </div>
+          </div>
+  
+        </div>
+      </div>
+  
+      <!-- end contact -->
+  
+      <!--  footer -->
+      <footer>
+        <div class="footer ">
+          <div class="container">
+            <div class="row">
+  
+              <div class="col-md-12">
+                <form class="news">
+                  <input class="newslatter" placeholder="Email" type="text" name=" Email">
+                  <button class="submit">Subscribe</button>
+                </form>
+              </div>
+              <div class="col-md-12">
+                <h2>Newsletter</h2>
+                <span>Subscribe to our Newsletter  </span>
+              </div>
+              <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 ">
+                <div class="row">
+                  <div class="col-xl-3 col-lg-3 col-md-6 col-sm-6 ">
+                    <div class="address">
+                      <h3>Contact us </h3>
+                      <ul class="loca">
+                        <li>
+                          <a href="#"><img src="icon/loc.png" alt="#" /></a>Nagpur
+                          <br>India </li>
+                          <li>
+                            <a href="#"><img src="icon/email.png" alt="#" /></a>Escholar@gmail.com </li>
+                            <li>
+                              <a href="#"><img src="icon/call.png" alt="#" /></a>+916266584252 </li>
+                            </ul>
+                            <ul class="social_link">
+                              <li><a href="https://www.facebook.com/AnimatedEducation/"><img src="icon/fb.png"></a></li>
+                              <li><a href="#"><img src="icon/tw.png"></a></li>
+                              <li><a href="https://www.instagram.com/escholarfoi/?igshid=1ksblg8xaibxa"><img src="icon/lin(2).png"></a></li>
+                              <li><a href="#"><img src="icon/instagram.png"></a></li>
+                            </ul>
+  
+                          </div>
+                        </div>
+                        <div class="col-lg-3 col-md-6 col-sm-6">
+                          <div class="address">
+                            <h3>Help Links</h3>
+                            <ul class="Menu_footer">
+                              <li class="active"> <a href="#">Terms and Conditions </a> </li>
+                              <li><a href="#">Privacy Policy</a> </li>
+                              <li><a href="#">Refund Policy</a> </li>
+                            </ul>
+                          </div>
+                        </div>
+                        <div class="col-lg-3 col-md-6 col-sm-6">
+                          <div class="address">
+                            <h3>Site Map</h3>
+                            <ul class="Links_footer">
+                              <li class="active">
+                              <a href="index.html">Home</a> </li>
+                      <li> <a href="#courses">Our Mission </a> </li>
+                      <li> <a href="#about">About Us</a> </li>
+                      <li> <a href="#learn">Vision</a> </li>
+                      <li> <a href="#important">Join Us</a> </li>
+                      <li> <a href="#contact">Contact Us</a> </li>
+                            </ul>
+                          </div>
+                        </div>
+  
+                        <div class="col-lg-3 col-md-6 col-sm-6 ">
+                          <div class="address">
+                            <a href="index.html"> <img src="images/App Icon Escholar (1).png" alt="logo" style="height: 200px; width: 200px;"></a>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+  
+                  </div>
+  
+                </div>
+                <div class="copyright">
+                  <div class="container">
+                    <p>Copyright © 2021 Design by <a href="https://html.design/">Bumble Tech R Solutions</a></p>
+                  </div>
+                </div>
+              </div>
+            </footer>
+            <!-- end footer -->
+            <!-- Javascript files-->
+            <script src="js/jquery.min.js"></script>
+            <script src="js/popper.min.js"></script>
+            <script src="js/bootstrap.bundle.min.js"></script>
+            <script src="js/jquery-3.0.0.min.js"></script>
+            <script src="js/plugin.js"></script>
+            <!-- sidebar -->
+            <script src="js/jquery.mCustomScrollbar.concat.min.js"></script>
+            <script src="js/custom.js"></script>
+            <script src="https:cdnjs.cloudflare.com/ajax/libs/fancybox/2.1.5/jquery.fancybox.min.js"></script>
+  
+  
+            <script>
+  // This example adds a marker to indicate the position of Bondi Beach in Sydney,
+  // Australia.
+  function initMap() {
+    var map = new google.maps.Map(document.getElementById('map'), {
+      zoom: 11,
+      center: {
+        lat: 40.645037,
+        lng: -73.880224
+      },
+    });
+  
+    var image = 'images/maps-and-flags.png';
+    var beachMarker = new google.maps.Marker({
+      position: {
+        lat: 40.645037,
+        lng: -73.880224
+      },
+      map: map,
+      icon: image
+    });
+  }
+  </script>
+  <!-- google map js -->
+  <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyA8eaHt9Dh5H57Zh0xVTqxVdBFCvFMqFjQ&callback=initMap"></script>
+  <!-- end google map js -->
+  
+  </div>
+  <!--/#description-->
+  </main>
+  
+  </body>
+  
+  </html>

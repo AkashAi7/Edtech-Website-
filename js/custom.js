@@ -80,55 +80,55 @@ $(function () {
 	/* OwlCarousel - Banner Rotator Slider
 	-- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- */
 
-	$(document).ready(function () {
-		var owl = $('.banner-rotator-slider');
-		owl.owlCarousel({
-			items: 1,
-			loop: true,
-			margin: 10,
-			nav: true,
-			dots: false,
-			navText: ["<i class='fa fa-angle-left'></i>", "<i class='fa fa-angle-right'></i>"],
-			autoplay: true,
-			autoplayTimeout: 3000,
-			autoplayHoverPause: true
-		});
-	});
+	// $(document).ready(function () {
+	// 	var owl = $('.banner-rotator-slider');
+	// 	owl.owlCarousel({
+	// 		items: 1,
+	// 		loop: true,
+	// 		margin: 10,
+	// 		nav: true,
+	// 		dots: false,
+	// 		navText: ["<i class='fa fa-angle-left'></i>", "<i class='fa fa-angle-right'></i>"],
+	// 		autoplay: true,
+	// 		autoplayTimeout: 3000,
+	// 		autoplayHoverPause: true
+	// 	});
+	// });
 
 	/* OwlCarousel - Product Slider
 	-- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- */
 
-	$(document).ready(function () {
-		var owl = $('#product-in-slider');
-		owl.owlCarousel({
-			loop: true,
-			nav: true,
-			margin: 10,
-			navText: ["<i class='fa fa-angle-left'></i>", "<i class='fa fa-angle-right'></i>"],
-			responsive: {
-				0: {
-					items: 1
-				},
-				600: {
-					items: 2
-				},
-				960: {
-					items: 3
-				},
-				1200: {
-					items: 4
-				}
-			}
-		});
-		owl.on('mousewheel', '.owl-stage', function (e) {
-			if (e.deltaY > 0) {
-				owl.trigger('next.owl');
-			} else {
-				owl.trigger('prev.owl');
-			}
-			e.preventDefault();
-		});
-	});
+	// $(document).ready(function () {
+	// 	var owl = $('#product-in-slider');
+	// 	owl.owlCarousel({
+	// 		loop: true,
+	// 		nav: true,
+	// 		margin: 10,
+	// 		navText: ["<i class='fa fa-angle-left'></i>", "<i class='fa fa-angle-right'></i>"],
+	// 		responsive: {
+	// 			0: {
+	// 				items: 1
+	// 			},
+	// 			600: {
+	// 				items: 2
+	// 			},
+	// 			960: {
+	// 				items: 3
+	// 			},
+	// 			1200: {
+	// 				items: 4
+	// 			}
+	// 		}
+	// 	});
+	// 	owl.on('mousewheel', '.owl-stage', function (e) {
+	// 		if (e.deltaY > 0) {
+	// 			owl.trigger('next.owl');
+	// 		} else {
+	// 			owl.trigger('prev.owl');
+	// 		}
+	// 		e.preventDefault();
+	// 	});
+	// });
 
 
 	
@@ -370,3 +370,35 @@ $(function () {
 
 
 });
+
+
+// js for the video
+var slideIndex = 1;
+showDivs(slideIndex);
+
+function plusDivs(n) {  
+  showDivs(slideIndex += n);
+}
+
+function showDivs(n) {
+  var i,
+      x = document.getElementsByClassName("video-slide"),
+      y = document.getElementsByTagName("video");
+  
+  if (n > x.length) {
+    slideIndex = 1
+  }
+  
+  if (n < 1) {
+    slideIndex = x.length
+  }
+  
+  for (i = 0; i < x.length; i++) {
+    x[i].style.display = "none";  
+    y[i].pause();
+  }
+  
+  x[slideIndex-1].style.display = "block";
+  
+}
+// js video 3

@@ -5,7 +5,8 @@
      display: none;
 }
  .mean-container .mean-bar {
-     background: #200769;
+     background: #8B23E8;
+
      float: left;
      min-height: 40px;
      padding: 5px 0;
@@ -153,7 +154,7 @@
 }
  @media (max-width: 767px) {
 .mean-container .mean-nav ul li.active a {
-color: #200769;
+color: #8B23E8;
 
 }
 
