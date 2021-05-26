@@ -55,7 +55,7 @@
       <div class="header">
         <div class="container-fluid">
           <div class="row">
-            <div class="col-xl-2 col-lg-4 col-md-4 col-sm-3 col logo_section">
+            <div class="col-xl-2 col-lg-4 col-md-4 col-sm-3 col logo_section hidden-mobile">
               <div class="full">
                 <div class="center-desk">
                   <div class="logo">
@@ -71,29 +71,33 @@
                   <nav class="main-menu ">
                     <ul class="menu-area-main">
                       <li class="active"> <a href="index.html">Home</a> </li>
-                      <li> <a href="#courses">Our Mission </a> </li>
-                      <li> <a href="#about">About Us</a> </li>
-                      <li> <a href="#learn">Vision</a> </li>
-                      <li> <a href="#important">Join Us</a> </li>
-                      <li> <a href="#contact">Contact Us</a> </li>
+                      <li> <a href="index.html" target="courses">Our Mission </a> </li>
+                      <li> <a href="index.html" target="about">About Us</a> </li>
+                      <li> <a href="index.html" target="learn">Vision</a> </li>
+                      <li> <a href="index.html" target="update">Updates</a> </li>
+                      <li> <a href="index.html"  target="important">Join Us</a> </li>
+                      <li> <a href="index.html" target="contact">Contact Us</a> </li>
                      <li><a href=""></a></li>
                      <li><a href=""></a></li>
                      <li><a href=""></a></li>
                      <li><a href=""></a></li>
-                        <button type="button" class="decrease btn btn-sm btn-dark" value=" - ">A-</button>
-                        <button type="button" class="resetMe btn btn-sm btn-dark" value=" = ">A</button>
-                        <button type="button" class="increase btn btn-sm btn-dark" value="  +  ">A+</button>
-                        <li> <div class="dropdown">
-                          <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                            language
-                          </button>
-                          <div class="dropdown-menu" aria-labelledby="dropdownMenuButton" style="background-color: rgb(44, 79, 235); ;">
-                            <a class="dropdown-item" href="#">Hindi</a>
-                            <a class="dropdown-item" href="#">Marathi</a>
-                            <!-- <a class="dropdown-item" href="#">Something else here</a> -->
-                          </div>
-                        </div>
-                      </li>
+                     <li><div class="dropdown">
+                      <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" style=" width: 80px; height: 25px; margin-bottom: 55px; font-size: 10px;">
+                        <section>Language</section>
+                      </button>
+                      <div class="dropdown-menu" aria-labelledby="dropdownMenuButton" style="background-color: blueviolet;">
+                        <a class="dropdown-item" href="marathi - Copy.html" style="color: aliceblue; ">Marathi</a>
+                        <a class="dropdown-item" href="hindi - Copy.html"style="color: aliceblue;">Hindi</a>
+                       
+                      </div>
+                    </div>
+                    
+                     <li><a href=""></a></li>
+                     <li style="margin-bottom: 75px;"> 
+                        <button type="button" class="decrease btn btn-sm btn-dark" value=" - " style="width: 25px; height:25px; font-size:x-small;">A- </button>
+                        <button type="button" class="resetMe btn btn-sm btn-dark" value=" = " style="width: 25px; height:25px ;font-size: x-small;">A</button>
+                        <button type="button" class="increase btn btn-sm btn-dark" value="  +  "style="width: 25px; height:25px ;font-size: x-small;">A+</button>
+                    </li>
                       </ul>
                    </nav>
                  </div>
@@ -105,7 +109,16 @@
          </div>
        </div>
      </div>
-      
+     <style>  
+      @media screen and (max-width:768px) {
+         .dropdown{
+            position: relative;
+            margin-top: -410px;
+            left: 250px;
+        }
+       
+        }
+    </style>
       
        <script type="text/javascript">
       $(document).ready(function(){        
@@ -360,11 +373,12 @@
                             <ul class="Links_footer">
                               <li class="active">
                               <a href="index.html">Home</a> </li>
-                      <li> <a href="#courses">Our Mission </a> </li>
-                      <li> <a href="#about">About Us</a> </li>
-                      <li> <a href="#learn">Vision</a> </li>
-                      <li> <a href="#important">Join Us</a> </li>
-                      <li> <a href="#contact">Contact Us</a> </li>
+                              <li> <a href="index.html" target="courses">Our Mission </a> </li>
+                              <li> <a href="index.html" target="about">About Us</a> </li>
+                              <li> <a href="index.html" target="learn">Vision</a> </li>
+                              <li> <a href="index.html" target="update">Updates</a> </li>
+                              <li> <a href="index.html"  target="important">Join Us</a> </li>
+                              <li> <a href="index.html" target="contact">Contact Us</a> </li>
                             </ul>
                           </div>
                         </div>

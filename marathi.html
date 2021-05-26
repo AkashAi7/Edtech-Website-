@@ -9,15 +9,15 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="viewport" content="initial-scale=1, maximum-scale=1">
   <!-- site metas -->
-  <title>Escholar</title>
+  <title>ई-स्कॉलर </title>
   <meta name="keywords" content="">
   <meta name="description" content="">
   <meta name="author" content="">
   <!-- fevicon -->
-  <link rel="icon" href="images/App Icon Escholar (1).png" type="image/gif" />
+  <link rel="icon" href="images/App Icon Escholar (1).png' %}" type="image/gif" />
   <!-- bootstrap css -->
   <link rel="stylesheet" href="css/bootstrap.min.css">
-  <script type="text/javascript" language="javascript" src="http://code.jquery.com/jquery-latest.js">
+  <script type="text/javascript" language="javascript" src="{% static 'http://code.jquery.com/jquery-latest.js' %}">
   </script> 
   <!-- style css -->
   <link rel="stylesheet" href="css/style.css">
@@ -29,15 +29,15 @@
   <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/2.1.5/jquery.fancybox.min.css" media="screen">
 <!--[if lt IE 9]>
-<script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
-<script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script><![endif]-->
+<script src="{% static 'https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js' %}"></script>
+<script src="{% static 'https://oss.maxcdn.com/respond/1.4.2/respond.min.js' %}"></script><![endif]-->
 </head>
 <!-- body -->
-<script type="text/javascript" src="./js/textadj.js"></script>
+<script type="text/javascript" src="{% static './js/textadj.js' %}"></script>
 <body class="main-layout">
   <!-- loader  -->
   <!-- <div class="loader_bg">
-    <div class="loader"><img src="images/loading.gif" alt="#" /></div>
+    <div class="loader"><img src="{% static 'images/loading.gif" alt="#" /></div>
   </div> -->
   <!-- end loader -->
 
@@ -54,11 +54,11 @@
       <div class="header">
         <div class="container-fluid">
           <div class="row">
-            <div class="col-xl-2 col-lg-4 col-md-4 col-sm-3 col logo_section">
+            <div class="col-xl-2 col-lg-4 col-md-4 col-sm-3 col logo_section hidden-mobile">
               <div class="full">
                 <div class="center-desk">
                   <div class="logo">
-                    <a href="index.html"><img src="images/App Icon Escholar (1).png" alt="#" style="height: 100px; width: 100px;"/></a>
+                    <a href="index.html"><img src="{% static 'images/App Icon Escholar (1).png' %}" alt="#" style="height: 100px; width: 100px;"/></a>
                   </div>
                 </div>
               </div>
@@ -69,37 +69,37 @@
                 <div class="limit-box">
                   <nav class="main-menu ">
                     <ul class="menu-area-main">
-                      <li class="active"> <a href="index.html">Home</a> </li>
-                      <li> <a href="#courses">Our Mission </a> </li>
-                      <li> <a href="#about">About Us</a> </li>
-                      <li> <a href="#learn">Vision</a> </li>
-                      <li> <a href="#important">Join Us</a> </li>
-                      <li> <a href="#contact">Contact Us</a> </li>
+                      <li class="active"> <a href="index.html">मुख्य पान</a> </li>
+                      <li> <a href="index.html" target="courses">आमचे ध्येय</a> </li>
+                      <li> <a href="index.html" target="about">आमच्याबद्दल</a> </li>
+                      <li> <a href="index.html" target="learn">आमची दृष्टी</a> </li>
+                      <li> <a href="index.html" target="update">अद्यतने</a> </li>
+                      <li> <a href="index.html"  target="important">आमच्यात सामील व्हा</a> </li>
+                      <li> <a href="index.html" target="contact">आमच्याशी संपर्क साधा</a> </li>
                      <li><a href=""></a></li>
-                     <li><a href=""></a></li>
-                     <li><a href=""></a></li>
-                     <li><a href=""></a></li>
+                    <li> <div class="dropdown">
+                      <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"style="height:30px">
+                        language
+                      </button>
+                      <div class="dropdown-menu" aria-labelledby="dropdownMenuButton" style="background-color:blueviolet">
+                        <a class="dropdown-item" href="index.html"style="color: aliceblue;">English</a>
+                        <a class="dropdown-item" href="hindi.html"style="color: aliceblue;">Hindi</a>
+                        <!-- <a class="dropdown-item" href="#">Something else here</a> -->
+                      </div>
+                    </div>
+                     <li>
                         <button type="button" class="decrease btn btn-sm btn-dark" value=" - ">A-</button>
                         <button type="button" class="resetMe btn btn-sm btn-dark" value=" = ">A</button>
                         <button type="button" class="increase btn btn-sm btn-dark" value="  +  ">A+</button>
-                       <li> <div class="dropdown">
-                          <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                            language
-                          </button>
-                          <div class="dropdown-menu" aria-labelledby="dropdownMenuButton" style="background-color: rgb(44, 79, 235); ;">
-                            <a class="dropdown-item" href="index.html">English</a>
-                            <a class="dropdown-item" href="hindi.html">Hindi</a>
-                            <!-- <a class="dropdown-item" href="#">Something else here</a> -->
-                          </div>
-                        </div>
-                      </li>
+                       <li> 
+                   
                         
                      </ul>
                    </nav>
                  </div>
                </div> 
                <!-- <div class="mean-last">
-                       <a href="#"><img src="images/search_icon.png" alt="#" /></a> </div>               -->
+                       <a href="#"><img src="{% static 'images/search_icon.png' %}" alt="#" /></a> </div>               -->
              </div>
            </div>
          </div>
@@ -140,28 +140,32 @@
      <section class="slider_section">
       <div id="myCarousel" class="carousel slide" data-ride="carousel">
        
-        <div class="carousel-inner">
-          <div class="carousel-item active">
-
-            <div class="container-fluid padding_dd">
-              <div class="carousel-caption">
-                <div class="row">
-                  <div class="col-xl-5 col-lg-5 col-md-5 col-sm-12">
-                    <div class="text-bg" id="context">
-                      <h4 style="font-size: 40px;">ई-लर्निंग म्हणजे काय? </h4>
-                    <p>डिजिटल माध्यमातून शिकणे याला ई-शिक्षण म्हणतात. कॉम्पुटर, मोबाईल फोन आणि लॅपटॉप हे  इलेक्ट्रॉनिक शिक्षण सुरू करण्यासाठी मुख्य घटक आहेत. आजच्या डिजिटल जगात प्रत्येकजण डिजिटल प्लॅटफॉर्मशी संबंधित कुठे तरी गुंतलेला आहे. सिस्टिम सुधारण्यासाठी आणि नवीन ट्रेंडसह जाण्यासाठी, लोक ई-शिक्षणाकडे वळले आहेत. आपण डिजीटल स्वरुपात असल्यास, आपल्याला या काळात  ई-शिक्षणाची आवश्यकता किती आहे याची जाणीव असणे आवश्यक आहे. ई-शिक्षण आपल्याला आपल्या अभ्यासावर लक्ष केंद्रित करण्यासाठी आरामदायक आणि कुठलेही रेस्ट्रीकशन नसणारे वातावरण देते. आणि असे करण्यास , ई-स्कॉलर हा आपला सर्वात चांगला साथीदार बनतो जो आपली स्वप्ने साध्य करण्यासाठी मार्गदर्शन करेल.</p>
-                    </div>
-                  </div>
-                  <div class="col-xl-7 col-lg-7 col-md-7 col-sm-12">
-                    <div class="images_box">
-                      <figure><img src="images/19197877-removebg-preview.png"></figure>
-                    </div>
-                  </div>
+        <div id="about" class="about">
+          <div class="container">
+            <div class="row">
+              <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12">
+                <div class="about-box">
+                  <h2> ई-लर्निंग<strong class="yellow"> म्हणजे काय?</strong></h2>
+                  <p > 
+                    डिजिटल माध्यमातून शिकणे याला ई-लर्निंग म्हणतात. कॉम्प्युटर, मोबाईल फोन आणि लॅपटॉप हे इलेक्ट्रॉनिक पद्धतीने शिक्षण सुरू करण्यासाठी मुख्य घटक आहेत. आजच्या डिजिटल जगात प्रत्येकजन डिजिटल प्लॅटफॉर्मशी संबंधित कुठे तरी गुंतलेला आहे. नविन पद्धतीने चालण्यासाठी आणि नविन ट्रेंडसह जाण्यासाठी, लोक ई-शिक्षणाकडे वळले आहेत. आपल्याला या काळात ई-शिक्षणाची आवश्यकता किती आहे हे तर महिती आहेतच. ई-शिक्षण आपल्याला आपल्या अभ्यासावर लक्ष केंद्रित करण्यास मदद करते आणि कुठलेही वेळेचे नियम नसणारे वातावरण देते. 
+                    </p>
+                    <!-- <a href="Javascript:void(0)">Read more</a> -->
+                </div>
+              </div>
+              <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12">
+                <div class="about-box">
+                  <figure><img src="{% static 'images/19197877-removebg-preview.png' %}" alt="#" /></figure>
                 </div>
               </div>
             </div>
+        <div class="row">
+      <div class="col-md-12">
+        <div class="learn_box">
+          <figure><img src="{% static 'images/1 marathi.jpg' %}" alt="img"/></figure>
+        </div>
+      </div>
+    </div>
           </div>
-
         </div>
       </div>
     </div>
@@ -175,6 +179,7 @@
 
 
 
+
 <!-- about  -->
 <div id="about" class="about">
   <div class="container">
@@ -182,13 +187,15 @@
       <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12">
         <div class="about-box">
           <h2> ई-स्कॉलर<strong class="yellow"> का?</strong></h2>
-          <p>अशी अनेक ई-लर्निंग पोर्टल आहेत जी ऑनलाईन व्याख्याने देतात. कोविड -१९ नंतर ऑनलाईन शिक्षणाची गरज बरीच वाढली आहे. जे विद्यार्थी आपला अभ्यास गमावत आहेत आणि महागड्या अँप्लिकेशन कडे ऑनलाईन लेक्चर घेण्यास आर्थिक पद्धतीने चांगले नाहीत अशा विद्यार्थ्यांसाठी, ई-स्कॉलर अत्यंत स्वस्त-अनुकूल सेवा घेऊन आला आहे. ई-स्कॉलर मध्ये, आम्ही केवळ उत्कृष्ट ज्ञानच देत नाही तर ज्यांची कुटुंबे आर्थिकदृष्ट्या स्थिर नाहीत अशा विद्यार्थ्यांना मदत सुद्धा करतो .ग्रामीण भागात शिक्षण देण्याच्या आमच्या हेतूबद्दल आम्ही स्पष्ट आहोत. प्रत्येक ग्रामीण आणि शहरी भाग डिजिटल सक्रिय करण्यात ई-स्कॉलर खूप योगदान देत आहे.</p>
+          <p>
+            या काही वर्षात अशी अनेक ई-लर्निंग पोर्टल आले आहेत जे ऑनलाईन शिक्षण देतात. आणि कोविड -१९ नंतर तर ऑनलाईन शिक्षणाची गरज बरीच वाढली आहे. जे विद्यार्थी आपला अभ्यास गमावत आहेत आणि महागड्या अँप्लिकेशन वरून ऑनलाईन लेक्चर घेण्यास आर्थिक पद्धतीने सक्षम नाहीत, अशा विद्यार्थ्यांसाठी ई-स्कॉलर एकदम उत्तम सेवा घेऊन आला आहे. कारण ई-स्कॉलर मध्ये, आम्ही केवळ उत्कृष्ट ज्ञानच देत नाही तर ज्यांची कुटुंबे आर्थिकदृष्ट्या स्थिर नाहीत अशा विद्यार्थ्यांना मदत सुद्धा करतो .ग्रामीण भागात मुलांना शिक्षा मिळावी त्यासाठी आम्ही कमी फीस मध्ये उत्कृष्ट शिक्षण मुलांना देत आहोत. प्रत्येक ग्रामीण आणि शहरी भाग डिजिटली सक्रिय करण्यात ई-स्कॉलर खूप मोठे योगदान सुद्धा देत आहे.
+          </p>
           <!-- <a href="Javascript:void(0)">Read more</a> -->
         </div>
       </div>
       <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12">
         <div class="about-box">
-          <figure><img src="images/10088-removebg-preview.png" alt="#" /></figure>
+          <figure><img src="{% static 'images/why escholar.png' %}" alt="#" /></figure>
         </div>
       </div>
     </div>
@@ -200,7 +207,7 @@
 
 
 <!-- our -->
-
+<!-- 
   <div class="container">
     <div class="row">
       <div class="col-md-12">
@@ -249,11 +256,11 @@
     </div>
   </div>
 </div>
-</div>
+</div> -->
 
 <!-- end our -->
 
-<center> <img src="images/2.jpg" alt="Now everybody can learn from anywhere" style="margin-bottom: 50px;margin-top: 120px;"/></center>
+<!-- <center> <img src="{% static 'images/2 marathi.jpg' %}" alt="Now everybody can learn from anywhere" style="margin-bottom: 50px;margin-top: 120px;"/></center> -->
 
 <!-- Courses -->
 <div id="courses" class="Courses">
@@ -265,7 +272,7 @@
             <div class="row">
               <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12">
                 <div class="box_my">
-                  <figure><img src="images/Learn anytime.jpg" style=width:263px;height:212px;></figure>
+                  <figure><img src="{% static 'images/Learn anytime.jpg' %}" style=width:263px;height:212px;></figure>
                   <div class="overlay">
                     <h3> कोणत्याही वेळी शिका।</h3>
                     <p>स्कूल किंवा ट्यूशन क्लास मध्ये जाण्याने तुम्हाला केवळ कंटाळा येत नाही तर प्रवासात थोडासा वेळही वाया जातो. तसेच, ट्युशन क्लास मध्ये उपस्थित राहण्यासाठी तुम्हाला विशिष्ट वेळेचे पालन करावे लागेल ज्यामुळे तुम्हाला वेळेचे बंधन होते. ई-स्कॉलर आपल्याला कोणत्याही वेळी शिकण्याचा फायदा देते तसेच क्लास मध्ये जाण्यासाठी आपल्याला आपला वेळ वाया घालवा लागत नाही.</p>
@@ -274,7 +281,7 @@
               </div>
               <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12">
                 <div class="box_my">
-                  <figure><img src="images/cost friendly.jpg"style=width:263px;height:212px;></figure>
+                  <figure><img src="{% static 'images/cost friendly.jpg' %}"style=width:263px;height:212px;></figure>
                   <div class="overlay">
                     <h3>खर्च  अनुकूल। </h3>
                     <p>खर्चाबद्दल बोलताना, ई-स्कॉलर हा एक प्लॅटफॉर्म आहे जो व्यवसाय दृष्टीकोनापेक्षा विद्यार्थ्यांच्या शिक्षणावर अधिक केंद्रित आहे. बाकी ई-लर्निंग पोर्टल सारखे ई-स्कॉलर मध्ये केवळ श्रीमंत लोकच शिक्षण घेऊ शकेल अशे नाही. आमचे मुख्य हेतू आपले शिक्षण खर्च अनुकूल बनविणे आहे.</p>
@@ -283,7 +290,7 @@
               </div>
               <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12">
                 <div class="box_my">
-                  <figure><img src="images/break from book.jpg" style=width:263px;height:212px;></figure>
+                  <figure><img src="{% static 'images/break from book.jpg' %}" style=width:263px;height:212px;></figure>
                   <div class="overlay">
                     <h3>पुस्तकांमधून ब्रेक देते.</h3>
                     <p>अभ्यास करताना असा एक वेळ येतो जेव्हा आपण पुस्तकांद्वारे अभ्यास करून कंटाळतो. स्वत: चे वाचन करणे आणि समजणे बर्याच विद्यार्थ्यांसाठी कठीण आहे. आपला अभ्यास जलद आणि मनोरंजक बनविण्यासाठी, ई-स्कॉलरचे व्हिडिओ व्याख्यान हे सर्वात चांगले पर्याय आहेत. आता दिवसभर पुस्तकांमधून अभ्यास करण्याची आवश्यकता नाही, व्हिडिओ सामग्री आपला अभ्यास खूप मनोरंजक बनवते.</p>
@@ -292,7 +299,7 @@
               </div>
               <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12">
                 <div class="box_my">
-                  <figure><img src="images/online video.jpg" style=width:263px;height:212px;></figure>
+                  <figure><img src="{% static 'images/online video.jpg' %}" style=width:263px;height:212px;></figure>
                   <div class="overlay">
                     <h3>आकर्षक ऑनलाइन कलासीस.</h3>
                   <p>ई-स्कॉलर च्या शिक्षणाची एक अद्वितीय पद्धत आहे जी उत्तम ज्ञान प्रदान करते जी विद्यार्थ्यांद्वारे समजणे सोपे आहे. व्हिडिओ लेक्चर्स विद्यार्थ्यांमध्ये विस्तार आणि ग्राफिक्समुळे रूची वाढवते. </p>
@@ -309,11 +316,11 @@
       <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12 border_right">
         <div class="box_text">
           <div class="titlepage">
-            <h2>ई-स्कॉलरचे <strong class="yellow">ध्येय: </strong></h2>
+            <h2>ई-स्कॉलरचे <strong class="yellow">ध्येय </strong></h2>
           </div>
-            <p>ई-स्कॉलरचे मुख्य उद्दीष्ट्य म्हणजे आपल्या घरात शाळा आणणे होय. आम्ही आपल्याला यूजर - फ्रेंडली व्यासपीठ आपले अभ्यास सुलभ करण्यासाठी तयार  करीत आहोत जे एका मनोरंजक मार्गाने लेसन्स  शिकविण्यास सक्षम असणारेआणि सर्व एकत्रितपणे विद्यार्थ्यांसमोर असलेल्या शंका सोडविण्यास सक्षम असणारे आमची कार्यसंघ आपल्याला सर्वोत्कृष्ट ज्ञान, तंत्र आणि स्पष्टीकरण, तसेच संकल्पनेची सेवा देण्यासाठी कधीही उपस्थित आहे जी आपल्याला अभ्यासासाठी उत्कृष्ट समज आणि सामर्थ्य देते. आमचे उद्दीष्ट आहे की प्रत्येक विद्यार्थ्याला कोणत्याही अडचणीकडे दुर्लक्ष करून शिक्षण प्रदान करता यावे. ई-स्कॉलर कमीतकमी फीसमध्ये जास्तीत जास्त लाभ देते ज्यायोगे आर्थिकदृष्ट्या चांगले नसलेल्या व्यक्तीसाठी देखील ते सोयीस्कर होते.</p>
+            <p>ई-स्कॉलरचे मुख्य उद्धिष्ट म्हणजे आपल्या घरात शाळा आणणे होय. लॉकडाउन मुळे ज्या मुलांचे शिक्षण वाया चालले आहे त्या मुलांसाठी आम्ही अत्यंत सोईस्कर पोर्टल आणले आहे. जे एका मनोरंजक मार्गाने लेसन्स  शिकविण्यात सक्षम असणार आणि सर्व विद्यार्थ्यांसमोर असलेल्या शंका सोडविण्यास सुद्धा सक्षम असणार. आमची टीम आपल्याला सर्वोत्कृष्ट ज्ञान, तंत्र आणि स्पष्टीकरण देण्यासाठी कधीही तत्पर आहे. आमचे मुख्य उद्दिष्ट आहे की प्रत्येक विद्यार्थ्यांना कोणत्याही अडचणीकडे दुर्लक्ष करून शिक्षण प्रदान करता यावे. ई-स्कॉलर कमीतकमी फीसमध्ये जास्तीत जास्त लाभ देतो . ज्यामुळे ज्या लोकांची आर्थिक परिस्तिथी चांगली नाही ते देखील इथे शिक्षण घेऊ शकेल.</p>
          
-            <p>आम्ही लेसन्स पद्धतीने नियमितपणे प्रत्येक कन्सेप्ट उत्तम ज्ञान प्रदान करतो. स्थान, क्षेत्र आणि पार्श्वभूमी काहीही असो, आम्ही ग्रामीण भागातील प्रत्येक विद्यार्थ्याचे व्यक्तिमत्त्व आणि ज्ञान विकसित करण्यासाठी येथे आहोत ज्यांना शिकण्याचा योग्य मार्ग मिळत नाही. एस्कॉलर हे एक व्यासपीठ आहे जे ज्ञान देण्यासाठी आणि पहिली ते दहावीच्या विद्यार्थ्यांना नियमित धडे शिकविण्यासाठी कायम तयार आहे.</p>
+            <p>आम्ही प्रत्येक पाठानुसार नियमितपणे प्रत्येक कन्सेप्टचे उत्तम ज्ञान प्रदान करतो. स्थान, क्षेत्र आणि पार्श्वभूमी काहीही असो, आम्ही ग्रामीण भागातील प्रत्येक विद्यार्थ्यांचे ज्ञान विकसित करण्यासाठी प्रयत्न करीत आहोत. ई-स्कॉलर हे एक असे पोर्टल आहे जे सहावी ते दहावीच्या विद्यार्थ्यांना नियमित धडे शिकविण्यासाठी कायम तयार आहे.</p>
           <!-- <a href="Javascript:void(0)">Read more</a> -->
 
         </div>
@@ -332,18 +339,19 @@
       <div class="col-md-12">
         <div class="titlepage">
           <h2>ई-स्कॉलर ची  <strong class="yellow">  दृष्टि</strong></h2>
-          <span>
-            शिक्षण आणि डिजिटल प्रशिक्षण आवश्यकतेमुळे हुशार विद्यार्थ्याच्या विकासासाठी ई-स्कॉलरला एक संधी मिळाली आहे ज्यामुळे आम्ही प्रत्येक विषयाचा क्लासनुसार धडा मुलांना शिकवू शकत आहोत. उत्कृष्ट प्लॅटफॉर्मच्या आवश्यकतेमध्ये भटकणार्या विद्यार्थ्यांना आम्ही पुरवित असलेल्या प्रशिक्षणाची प्रतिष्ठा व शुद्धता कायम राखण्यासाठी आम्ही नेहमीच प्रयत्न करण्यास तयार असतो. आम्ही दिलेली कंसेप्ट्स आणि आम्ही सामायिक ज्ञान यासाठी वचनबद्ध आहोत ज्यामुळे विद्यार्थ्यांची प्रगती होईल आणि त्यांचे यश मिळेल. आधुनिक टेकनॉलॉजिचा वापर करून विद्यार्थ्यांचे उज्ज्वल भविष्य पाहणे हीच आमची दृष्टी आहे.            </span>
+          <span>बदलत्या काळात शिक्षणाचे माध्यम सुद्धा बदलले आहे. शिक्षणाच्या आवश्यकतेमुळे विद्यार्थ्यांच्या विकासासाठी ई-स्कॉलरला प्रत्येक विषयाचा क्लासनुसार धडा मुलांना शिकवायला  मिळत आहे. मुलांचा विकास व्हावा आणि त्यांना यश मिळावे म्हणून आम्ही इथे प्रयत्न करीत आहोत. तसेच आधुनिक टेकनॉलॉजिचा वापर करून विद्यार्थ्यांचे उज्ज्वल भविष्य पाहणे हीच आमची दृष्टी आहे.
+                       </span>
         </div>
       </div>
     </div>
-    <div class="row">
+    <!-- <div class="row">
       <div class="col-md-12">
         <div class="learn_box">
-          <figure><img src="images/1.jpg" alt="img"/></figure>
+          <figure><img src="{% static 'images/1 marathi.jpg' %}" alt="img"/></figure>
         </div>
       </div>
-    </div>
+    </div> -->
+    <center> <img src="{% static 'images/2 marathi.jpg' %}" alt="Now everybody can learn from anywhere" /></center>
   </div>
 </div>
 <!-- MAKE --> 
@@ -362,15 +370,14 @@
       <div class="col-xl-5 col-lg-5 col-md-5 col-sm-12"> -->
         <div class="make_text">
           <ol type="A">
-           <li>1. जे विद्यार्थी शिकण्यास इच्छुक आहेत परंतु लॉकडाऊनमुळे ते करण्यास असमर्थ आहेत.</li>
+           <li>1.जे विद्यार्थी शिकण्यास इच्छुक आहेत परंतु लॉकडाऊनमुळे ते करण्यास असमर्थ आहेत.</li>
 
            <li>२. आम्ही ग्रामीण भागातील विद्यार्थ्यांकडे जास्त लक्ष देत आहोत जे आपले शिक्षण गमावत आहेत.
-
-            <li>३. आम्ही प्रत्येक अध्यायात ऑनलाईन व्याख्याने देतो जेणेकरून विद्यार्थ्यांना शिक्षणास गमावू नये.
-
-              <li>४. ज्या विद्यार्थ्यांनी शिकवणी वर्गातून डिस्कनेक्ट केले आणि शिकण्यासाठी चांगल्या केंद्रासाठी भटकंती केली त्यांच्यासाठी आम्ही येथे आहोत.</li>
-             <li>५. जे विद्यार्थी अत्यंत कमी किंमतीत उच्च-स्तरीय शिक्षण शोधत आहेत त्यांच्यासाठी ई-स्कॉलर मध्ये सामील होणे फायदेशीर ठरेल.
-               <li> ६. ज्या विद्यार्थ्यांना पुस्तकांमधून शिकाणे कठीण जाते त्यांच्यासाठी ई-स्कॉलर हा एक उत्तम पर्याय आहे कारण त्यामध्ये व्हिडीओ फॉरमॅटमध्ये धडे शिकविले जातात जे ज्ञान आकलन करण्याचा एक सोपा मार्ग आहे.
+            <li>३. आम्ही प्रत्येक अध्यायात ऑनलाईन व्याख्यान देतो जेणेकरून विद्यार्थ्यांचा अभ्यास पूर्णपणे व्हावा.
+            </li>
+              <li>४. ज्या विद्यार्थ्यांनी शिकवणी वर्गातून डिस्कनेक्ट केले आहे आणि शिकण्यासाठी चांगल्या जागेचा शोध करीत आहेत त्यांच्यासाठी सुद्धा आम्ही येथे तयार आहोत.</li>
+             <li>५. जे विद्यार्थी अत्यंत कमी किंमतीत उच्च-स्तरीय शिक्षण घेण्याच्या शोधात आहेत त्यांच्यासाठी ई-स्कॉलर मध्ये सामील होणे अत्यंत फायदेशीर ठरेल.</li>
+               <li>६. ज्या विद्यार्थ्यांना पुस्तकांमधून शिकणे कठीण जाते त्यांच्यासाठी ई-स्कॉलर हा एक उत्तम पर्याय आहे कारण त्यामध्ये व्हिडीओ फॉरमॅटमध्ये धडे शिकविले जातात जे ज्ञान मिळविण्याचा एक सोपा मार्ग आहे.
           </ol>
           
           
@@ -473,32 +480,35 @@
 
 
 <div class="titlepage" >
-  <h2>ई-लर्निंग<strong class="yellow"> के लाभ</strong></h2>
-  <span></span>
+  <h2> ई-शिक्षणाचे<strong class="yellow"> फायदे:</strong></h2>
+  <span><p>ई-लर्निंगची लोकप्रियता आणि वाढती मागणी याबद्दल आपण सर्वजण जागरूक आहोतच. याचा वापर करणाऱ्या मुलांना खूप फायदा होतो. ई-लर्निंग आपले भविष्य किती उज्ज्वल बनवू शकतो हे तर आपल्याला ठाऊक आहेच. 
+
+    ऑनलाईन पद्धतीने शिकण्याचे आणि ई-स्कॉलरमध्ये सामील होण्याचे काही फायदे खाली दिले आहेत:
+    </p></span>
 </div> 
 
 <!-- cards trail 3 -->
 <div class="card-deck" style="margin-top: 50px;">
   <div class="card">
-    <img class="card-img-top" src="/images/Learn anytime1.jpg" alt="Card image cap">
+    <img class="card-img-top" src="{% static '/images/Learn anytime1.jpg' %}" alt="Card image cap">
     <div class="card-body">
       <h5 class="card-title" style="font-size: large; text-align: center;">कोणत्याही वेळी शिका.</h5>
-      <p class="card-text" style=>स्कूल किंवा ट्यूशन क्लास मध्ये जाण्याने तुम्हाला केवळ कंटाळा येत नाही तर प्रवासात थोडासा वेळही वाया जातो. तसेच, ट्युशन क्लास मध्ये उपस्थित राहण्यासाठी तुम्हाला विशिष्ट वेळेचे पालन करावे लागेल ज्यामुळे तुम्हाला वेळेचे बंधन होते. ई-स्कॉलर आपल्याला कोणत्याही वेळी शिकण्याचा फायदा देते तसेच क्लास मध्ये जाण्यासाठी आपल्याला आपला वेळ वाया घालवा लागत नाही.</p>
+      <p class="card-text" style=>स्कुल किंवा ट्युशन क्लास मध्ये जाण्याने तुम्हाला कंटाळा तर येतोच, सोबतच प्रवासात तुमचा वेळ सुद्धा वाया जातो. तसेच, ट्युशन क्लास मध्ये उपस्थित राहण्यासाठी तुम्हाला विशिष्ट वेळेचे पालन करावे लागते. म्हणून ई-स्कॉलर आपल्याला कोणत्याही वेळी शिकण्याचा फायदा देतो तसेच क्लास मध्ये जाण्यासाठी आपल्याला आपला वेळ वाया घालावा लागत नाही. </p>
      
     </div>
   </div>
   <div class="card">
-    <img class="card-img-top" src="images/learn anywhere1.jpg" alt="Card image cap">
+    <img class="card-img-top" src="{% static 'images/learn anywhere1.jpg' %}" alt="Card image cap">
     <div class="card-body">
-      <h5 class="card-title" style="font-size: large; text-align: center;">कोणत्याही लोकेशन बंदीची पर्वा न करता ऑनलाईन शिक्षणाचा आनंद घ्या..</h5>
-      शाळांवर  ई-स्कॉलरचा एक फायदा म्हणजे आपण कोठेही शिकू शकता. सध्याच्या कोविड -१९ परिस्थितीत शाळा आधीच बंद आहेत ज्यामुळे प्रत्येक विद्यार्थ्याच्या शिक्षणावर विपरित परिणाम झाला आहे. कधी अशा परिस्थितीती असते की जेव्हा विद्यार्थी दुसर्या शहरात गेले असतील तर त्यांना क्लास घेता येत नाही. यामुळे स्टुडंट्सचा त्या दिवसांचे वर्ग गहाळ होतो . पण ई-स्कॉलर ऑनलाइन लेक्चर्स प्रदान करतात जे आपल्याला कोणत्याही ठिकाणी क्लासेस घेण्याचा फायदा देतात.    
+      <h5 class="card-title" style="font-size: large; text-align: center;">कोणत्याही जागेचे बंधन न पाळता ऑनलाईन शिक्षणाचा आनंद घ्या.</h5>
+      शाळांवर ई-स्कॉलरचा एक फायदा म्हणजे आपण कोठेही शिकू शकता. सध्याच्या कोविड -१९ परिस्थितीत शाळा तर आधीच बंद आहेत ज्यामुळे प्रत्येक विद्यार्थ्याच्या शिक्षणावर विपरित परिणाम झाला आहे. अनेकदा अशी परिस्थिती असते की जेव्हा विद्यार्थी दुसऱ्या शहरात गेले असतील तर त्यांना क्लास घेता येत नाही. यामुळे मुलांचे त्या दिवसाचे वर्ग गहाळ होते. पण ई-स्कॉलर ऑनलाइन लेक्चर्स देते ज्यामुळे आपल्याला कोणत्याही ठिकाणी क्लासेस घेण्याचा फायदा मिळतो.   
     </div>
   </div>
   <div class="card">
-    <img class="card-img-top" src="/images/10088.jpg" alt="Card image cap">
+    <img class="card-img-top" src="{% static '/images/10088.jpg' %}" alt="Card image cap">
     <div class="card-body">
-      <h5 class="card-title"style="font-size: large; text-align: center;">आपण समान धडा एकाधिक वेळा शिकू शकता.</h5>
-      ई-स्कॉलर आपल्याला रिपीटेशन प्रक्रिया करू देतो आणि आपल्याला पाहिजे तितक्या वेळा लेक्चर्स घेण्याची परवानगी देतो. बर्याच वेळा असे घडते की काही कन्सेप्ट एका वेळात समजल्या जात नाहीत, परंतु दोनदा किंवा तीनदा क्लास करून जाणून घेणे सुलभ होते. ई-स्कॉलर मध्ये सामील होणे हे एक अतिशय यूजर- फ्रेनडली व्यासपीठ आहे ज्याद्वारे आपण अनेक वेळा समान कन्सेप्ट आणि विषय शिकू शकता.     
+      <h5 class="card-title"style="font-size: large; text-align: center;">आपण समान धडा कितीदाही बघू शकता.</h5>
+      ई-स्कॉलर आपल्याला रिपीटेशन प्रक्रिया करू देतो, म्हणजेच आपल्याला पाहिजे तितक्या वेळा लेक्चर्स घेण्याची परवानगी देतो. बऱ्याच वेळा असे घडते की काही कन्सेप्ट एका वेळात समजल्या जात नाहीत, परंतु दोनदा किंवा तीनदा क्लास पुन्हा बघून समजण्यात मदत मिळते. ई-स्कॉलर हे एक लाभदायक पोर्टल आहे ज्याद्वारे आपण अनेक वेळा एकच विषय शिकू शकता व तुमच्या शंका दूर करू शकता.     
     </div>
   </div>
 </div>
@@ -508,34 +518,375 @@
 <!-- cards pair 2 -->
 <div class="card-deck" style="margin-top: 50px;">
   <div class="card">
-    <img class="card-img-top" src="/images/savemoney.jpg" alt="Card image cap">
+    <img class="card-img-top" src="{% static '/images/savemoney.jpg' %}" alt="Card image cap">
     <div class="card-body">
-      <h5 class="card-title" style="font-size: large; text-align: center;">खर्च  अनुकूल।</h5>
-      <p class="card-text">खर्चाबद्दल बोलताना, ई-स्कॉलर हा एक प्लॅटफॉर्म आहे जो व्यवसाय दृष्टीकोनापेक्षा विद्यार्थ्यांच्या शिक्षणावर अधिक केंद्रित आहे. बाकी ई-लर्निंग पोर्टल सारखे ई-स्कॉलर मध्ये केवळ श्रीमंत लोकच शिक्षण घेऊ शकेल अशे नाही. आमचे मुख्य हेतू आपले शिक्षण खर्च अनुकूल बनविणे आहे.</p>
+      <h5 class="card-title" style="font-size: large; text-align: center;">खर्च अनुकूल</h5>
+      <p class="card-text">ई-स्कॉलर हा एक असा प्लैटफॉर्म आहे जो व्यवसाय दृष्टी ने विचार न करता विद्यार्थ्यांच्या शिक्षणावर अधिक लक्ष केंद्रित करतो. बाकी ई-लर्निंग पोर्टल मध्ये केवळ श्रीमंत लोकच शिक्षण घेऊ शकतात. पण ई-स्कॉलरचा मुख्य हेतू शिक्षणावरचा खर्च कमी करणे हा आहे. म्हणूनच आम्ही कमी खर्चात मुलांना शिक्षण प्रदान करीत आहोत.</p>
       
     </div>
   </div>
   <div class="card">
-    <img class="card-img-top" src="/images/deep knowledge.jpg" alt="Card image cap">
+    <img class="card-img-top" src="{% static '/images/deep knowledge.jpg' %}" alt="Card image cap">
     <div class="card-body">
-      <h5 class="card-title" style="font-size: large; text-align: center;">खोल ज्ञान प्रदान करते.</h5>
-      <p class="card-text">आपण असे नाही की जे फक्त मुख्य मुद्द्यांमधून जातात आणि कंसेप्ट्स सांगून शेवट करतात. येथे, आम्ही प्रत्येक धडा आणि प्रत्येक कन्सेप्ट बद्दल सखोल ज्ञान प्रदान करतो. व्हिडिओ आणि छायाचित्रांचे स्पष्टीकरण आणि वेळोवेळी लक्ष देणारी लेक्चर्स आपल्याला प्रत्येक कन्सेप्ट मागील  उत्कृष्ट कल्पना आणि शास्त्र मिळविण्यात मदत करतात.</p>
+      <h5 class="card-title" style="font-size: large; text-align: center;">खोल ज्ञान प्रदान करते</h5>
+      <p class="card-text">भरपूर पोर्टल्स अशे असतात जिथे फक्त वर-वरून शिकवतात आणि मुलांना सोडून देतात. पण इथे आम्ही फक्त मुख्य मुद्दे समजावत नाही. आम्ही प्रत्येक धडा आणि प्रत्येक कन्सेप्ट बद्दल सखोल ज्ञान प्रदान करतो. व्हिडीओ स्पष्टीकरण आणि वेळोवेळी लक्ष देणारी लेक्चर्स आपल्याला प्रत्येक कन्सेप्ट मागील उत्कृष्ट कल्पना आणि शास्त्र समजावण्यात मदत मिळवून देतो.</p>
     </div>
   </div>
   <div class="card">
-    <img class="card-img-top" src="/images/attractive online classes.jpg" alt="Card image cap">
+    <img class="card-img-top" src="{% static '/images/attractive online classes.jpg' %}" alt="Card image cap">
     <div class="card-body">
-      <h5 class="card-title" style="font-size: large; text-align: center;">आकर्षक ऑनलाइन कलासीस.</h5>
-      <p class="card-text">ई-स्कॉलर च्या शिक्षणाची एक अद्वितीय पद्धत आहे जी उत्तम ज्ञान प्रदान करते जी विद्यार्थ्यांद्वारे समजणे सोपे आहे. व्हिडिओ लेक्चर्स विद्यार्थ्यांमध्ये विस्तार आणि ग्राफिक्समुळे रूची वाढवते. आम्ही प्रत्येक व्हिडिओ तयार करतो ज्यात विविध संशोधनांद्वारे सखोल ज्ञान असते. ई-स्कॉलर व्हिडिओ लेक्चर्स  अधिक आकर्षक बनविण्याच्या प्रयत्नात आहेत जे कन्सेप्ट पटकन समजण्यास सुलभ करते.</p>
+      <h5 class="card-title" style="font-size: large; text-align: center;">आकर्षक ऑनलाइन क्लासेस</h5>
+      <p class="card-text">मुलांना समजणे सोपे व्हावे आणि त्यांना पूर्णपणे शिक्षण मिळावे म्हणून आम्ही उत्तम पद्धतीने शिकवतो. व्हिडीओ लेक्चर्स विद्यार्थ्यांमध्ये रूची वाढवते म्हणून  आम्ही प्रत्येक व्हिडीओ सखोल ज्ञान घेऊन तयार करतो. ई-स्कॉलर व्हिडीओ लेक्चर्स अधिक आकर्षक बनवतो ज्यामुळे विद्यार्थ्यांना कन्सेप्ट पटकन समजण्यास मदत मिळेल</p>
       
     </div>
   </div>
 </div>
 <!-- cards pair 2 end -->
 <!-- card solo -->
+<div class="card">
+  <img class="card-img-top" src="{% static '/images/attractive online classes.jpg' %}" alt="Card image cap">
+  <div class="card-body">
+    <h5 class="card-title" style="font-size: large; text-align: center;">पुस्तकांमधून ब्रेक देते</h5>
+    <p class="card-text">अभ्यास करताना असं अनेकदा होते जेव्हा आपण पुस्तकांमधून अभ्यास करून कंटाळतो. स्वत: चे वाचन करणे आणि स्वतः समजणे बऱ्याच विद्यार्थ्यांसाठी कठीण सुद्धा जाते. म्हणून आपला अभ्यास मनोरंजक बनविण्यासाठी, ई-स्कॉलरचे व्हिडीओ व्याख्यान हे सर्वात चांगले पर्याय आहेत. आता दिवसभर पुस्तकांमधून अभ्यास करण्याची आवश्यकता नाही, कारण व्हिडीओ सामुग्री आपला अभ्यास खूप मनोरंजक बनवते.</p>
+    
+  </div>
+</div>
 
-<center><img src="images/3.jpg" alt="Download our app" style="margin-top: 30px;"/></center>
 
+<center><img src="{% static 'images/3 marathi.jpg' %}" alt="Download our app" style="margin-top: 30px;"/></center>
+
+
+<!-- update section -->
+ 
+
+<style>
+  
+  .galleryContainer{
+    width: 100%;
+    height: 500px;
+    max-width: 1000px;
+    margin: auto;
+    user-select: none;
+    box-shadow: 0px 0px 3px 1px #00000078;
+    padding: 10px;
+    box-sizing: border-box;
+  }
+  .galleryContainer .slideShowContainer{
+    width: 100%;
+    height: 90%;
+    overflow: hidden;
+    background-color: gainsboro;
+    position: relative;
+  }
+  .galleryContainer .slideShowContainer #playPause{
+    width: 32px;
+    height: 32px;
+    position: absolute;
+    background-image: url("{% 'images/playPause.png' %}");
+    background-repeat: no-repeat;
+    z-index: 5;
+    background-size: cover;
+    margin: 5px;
+    cursor: pointer;
+  }
+  .galleryContainer .slideShowContainer #playPause:hover{
+    opacity: .7;
+  }
+  .galleryContainer .slideShowContainer .imageHolder{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    opacity: 0;
+  }
+  .galleryContainer .slideShowContainer .imageHolder img{
+    width: 100%;
+    height: 100%;
+  }
+  .galleryContainer .slideShowContainer .imageHolder .captionText{
+    display: none;
+  }
+  
+  .galleryContainer .slideShowContainer .leftArrow,.galleryContainer .slideShowContainer .rightArrow{
+    width: 50px;
+    background: #00000036;
+    position: absolute;
+    left: 0;
+    z-index: 1;
+    transition: background 0.5s;
+    height: 72px;
+    top: 50%;
+    transform: translateY(-50%);
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+  }
+  .galleryContainer .slideShowContainer .rightArrow{
+    left: auto;
+    right: 0;
+    border-top-right-radius: 0px;
+    border-bottom-right-radius: 0px;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+  }
+  .galleryContainer .slideShowContainer .leftArrow:hover,.galleryContainer .slideShowContainer .rightArrow:hover{
+    background: #000000a8;
+    cursor: pointer;
+  }
+  .galleryContainer .arrow{
+    display: inline-block;
+    border: 3px solid white;
+    width: 10px;
+    height: 10px;
+    border-left: none;
+    border-bottom: none;
+    margin: auto;
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+  }
+  .galleryContainer .arrow.arrowLeft{
+    transform: rotateZ(-135deg);
+  }
+  .galleryContainer .arrow.arrowRight{
+    transform: rotateZ(45deg);
+  }
+  
+  
+  .galleryContainer .slideShowContainer>.captionTextHolder{
+    position: absolute;
+    bottom: 0;
+    z-index: 1;
+    color: white;
+    font-family: sans-serif;
+    font-size: 20px;
+    text-align: center;
+    width: 100%;
+    background: #00000047;
+    height: 50px;
+    line-height: 50px;
+    overflow: hidden;
+  }
+  .galleryContainer .slideShowContainer>.captionTextHolder>.captionText{
+    margin: 0;
+  }
+  
+  .galleryContainer #dotsContainer{
+    width: 100%;
+    height: 10%;
+    text-align: center;
+    padding-top: 20px;
+    box-sizing: border-box;
+  }
+  .galleryContainer #dotsContainer .dots{
+    display: inline-block;
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    margin-left: 5px;
+    background-color: #bbb;
+    cursor: pointer;
+    transition:background-color 0.5s;
+  }
+  .galleryContainer #dotsContainer .dots:first-child{
+    margin-left: 0;
+  }
+  .galleryContainer #dotsContainer .dots:hover,.galleryContainer #dotsContainer .dots.active{
+    background-color: #717171;;
+  }
+  
+  
+  
+  
+  .galleryContainer .moveLeftCurrentSlide{
+    animation-name: moveLeftCurrent;
+    animation-duration: 0.5s;
+    animation-timing-function: linear;
+    animation-fill-mode:forwards;
+  
+  }
+  .galleryContainer .moveLeftNextSlide{
+    animation-name: moveLeftNext;
+    animation-duration: 0.5s;
+    animation-timing-function: linear;
+    animation-fill-mode:forwards;
+  }
+  @keyframes moveLeftCurrent {
+    from {margin-left: 0;opacity: 1;}
+    to {margin-left: -100%;opacity: 1;}
+  }
+  @keyframes moveLeftNext {
+    from {margin-left: 100%;opacity: 1;}
+    to {margin-left: 0%;opacity: 1;}
+  }
+  
+  
+  .galleryContainer .moveRightCurrentSlide{
+    animation-name: moveRightCurrent;
+    animation-duration: 0.5s;
+    animation-timing-function: linear;
+    animation-fill-mode:forwards;
+  }
+  .galleryContainer .moveRightPrevSlide{
+    animation-name: moveRightPrev;
+    animation-duration: 0.5s;
+    animation-timing-function: linear;
+    animation-fill-mode:forwards;
+  }
+  @keyframes moveRightCurrent {
+    from {margin-left: 0;opacity: 1;}
+    to {margin-left: 100%;opacity: 1;}
+  }
+  @keyframes moveRightPrev {
+    from {margin-left: -100%;opacity: 1;}
+    to {margin-left: 0%;opacity: 1;}
+  }
+  .slideTextFromBottom {
+    animation-name: slideTextFromBottom;
+    animation-duration: 0.7s;
+    animation-timing-function: ease-out;
+  }
+  @keyframes slideTextFromBottom {
+    from {opacity: 0;margin-top: 100px}
+    to {opacity: 1;margin-top: 0px;}
+  }
+  .slideTextFromTop {
+    animation-name: slideTextFromTop;
+    animation-duration: 0.7s;
+    animation-timing-function: ease-out;
+  }
+  @keyframes slideTextFromTop {
+    from {opacity: 0;margin-top: -100px}
+    to {opacity: 1;margin-top: 0px;}
+  }
+  </style>
+
+  <div id="update">
+    <div class="titlepage" style="margin-top: 50px;">
+      <h2>Updates<strong class="yellow"></strong></h2>
+      <span></span>
+    </div>
+  
+  
+  <div class="galleryContainer" style="margin-bottom: 80px;">
+    <div class="slideShowContainer">
+        
+        <div onclick="plusSlides(-1)" class="nextPrevBtn leftArrow"><span class="arrow arrowLeft"></span></div>
+        <div onclick="plusSlides(1)" class="nextPrevBtn rightArrow"><span class="arrow arrowRight"></span></div>
+        <div class="captionTextHolder"><p class="captionText slideTextFromTop"></p></div>
+        <div class="imageHolder">
+            <img src="{% static './updates/up1.jpg' %}">1366X768
+            <p class="captionText">Pic - 01</p>
+        </div>
+        <div class="imageHolder">
+            <img src="{% static './updates/up2.jpg' %}">
+            <p class="captionText">Pic - 02</p>
+        </div>
+        <div class="imageHolder">
+            <img src="{% static './updates/up3.jpg' %}">
+            <p class="captionText">Pic - 03</p>
+        </div>
+        <div class="imageHolder">
+            <img src="{% static './updates/up1.jpg' %}">
+            <p class="captionText">Pic - 04</p>
+        </div>
+    </div>
+    <div id="dotsContainer"></div>
+  </div>
+</div>
+  <script>
+    var slideIndex,slides,dots,captionText;
+    function initGallery(){
+        slideIndex = 0;
+        slides=document.getElementsByClassName("imageHolder");
+        slides[slideIndex].style.opacity=1;
+    
+        captionText=document.querySelector(".captionTextHolder .captionText");
+        captionText.innerText=slides[slideIndex].querySelector(".captionText").innerText;
+    
+        //disable nextPrevBtn if slide count is one
+        if(slides.length<2){
+            var nextPrevBtns=document.querySelector(".leftArrow,.rightArrow");
+            nextPrevBtns.style.display="none";
+            for (i = 0; i < nextPrevBtn.length; i++) {
+                nextPrevBtn[i].style.display="none";
+            }
+        }
+    
+        //add dots
+        dots=[];
+        var dotsContainer=document.getElementById("dotsContainer"),i;
+        for (i = 0; i < slides.length; i++) {
+            var dot=document.createElement("span");
+            dot.classList.add("dots");
+            dotsContainer.append(dot);
+            dot.setAttribute("onclick","moveSlide("+i+")");
+            dots.push(dot);
+        }
+        dots[slideIndex].classList.add("active");
+    }
+    initGallery();
+    function plusSlides(n) {
+        moveSlide(slideIndex+n);
+    }
+    function moveSlide(n){
+        var i;
+        var current,next;
+        var moveSlideAnimClass={
+              forCurrent:"",
+              forNext:""
+        };
+        var slideTextAnimClass;
+        if(n>slideIndex) {
+            if(n >= slides.length){n=0;}
+            moveSlideAnimClass.forCurrent="moveLeftCurrentSlide";
+            moveSlideAnimClass.forNext="moveLeftNextSlide";
+            slideTextAnimClass="slideTextFromTop";
+        }else if(n<slideIndex){
+            if(n<0){n=slides.length-1;}
+            moveSlideAnimClass.forCurrent="moveRightCurrentSlide";
+            moveSlideAnimClass.forNext="moveRightPrevSlide";
+            slideTextAnimClass="slideTextFromBottom";
+        }
+    
+        if(n!=slideIndex){
+            next = slides[n];
+            current=slides[slideIndex];
+            for (i = 0; i < slides.length; i++) {
+                slides[i].className = "imageHolder";
+                slides[i].style.opacity=0;
+                dots[i].classList.remove("active");
+            }
+            current.classList.add(moveSlideAnimClass.forCurrent);
+            next.classList.add(moveSlideAnimClass.forNext);
+            dots[n].classList.add("active");
+            slideIndex=n;
+            captionText.style.display="none";
+            captionText.className="captionText "+slideTextAnimClass;
+            captionText.innerText=slides[n].querySelector(".captionText").innerText;
+            captionText.style.display="block";
+        }
+    
+    }
+    var timer=null;
+    function setTimer(){
+        timer=setInterval(function () {
+            plusSlides(1) ;
+        },3000);
+    }
+    setTimer();
+    function playPauseSlides() {
+        var playPauseBtn=document.getElementById("playPause");
+        if(timer==null){
+            setTimer();
+            playPauseBtn.style.backgroundPositionY="0px"
+        }else{
+            clearInterval(timer);
+            timer=null;
+            playPauseBtn.style.backgroundPositionY="-33px"
+        }
+    }</script>
+  <!-- update end -->
 
 
 <!-- contact -->
@@ -588,35 +939,36 @@
         <div class="container">
           <div class="row">
 
-            <div class="col-md-12">
+            <!-- <div class="col-md-12">
               <form class="news">
                 <input class="newslatter" placeholder="Email" type="text" name=" Email">
                 <button class="submit">Subscribe</button>
               </form>
-            </div>
-            <div class="col-md-12">
+            </div> -->
+            <!-- <div class="col-md-12">
               <h2>Newsletter</h2>
               <span>Subscribe to our Newsletter </span>
-            </div>
-            <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 ">
+            </div> -->
+            <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 " style="margin-top: 50px;">
               <div class="row">
                 <div class="col-xl-3 col-lg-3 col-md-6 col-sm-6 ">
                   <div class="address">
-                    <h3>आमच्याशी संपर्क साधा </h3>
+                    <h3>Contact Us </h3>
                     <ul class="loca">
                       <li>
-                        <a href="#"><img src="icon/loc.png" alt="#" /></a>Nagpur
+                        <a href="#"><img src="{% static 'icon/loc.png' %}" alt="#" /></a>5, Bhoyar Layout, Balaji Nagar, Manewada road, Nagpur, 440027
                         <br>India </li>
                         <li>
-                          <a href="#"><img src="icon/email.png" alt="#" /></a>Escholar@gmail.com </li>
+                          <a href="#"><img src="{% static 'icon/email.png' %}" alt="#" /></a>support@escholarfoi.com  <br> admin@escholarfoi.com
+                        </li>
                           <li>
-                            <a href="#"><img src="icon/call.png" alt="#" /></a>+12586954775 </li>
+                            <a href="#"><img src="{% static 'icon/call.png' %}" alt="#" /></a>+919067646866</li>
                           </ul>
                           <ul class="social_link">
-                            <li><a href="https://www.facebook.com/AnimatedEducation/"><img src="icon/fb.png"></a></li>
-                            <li><a href="#"><img src="icon/tw.png"></a></li>
-                            <li><a href="https://www.instagram.com/escholarfoi/?igshid=1ksblg8xaibxa"><img src="icon/lin(2).png"></a></li>
-                            <li><a href="#"><img src="icon/instagram.png"></a></li>
+                            <li><a href="https://www.facebook.com/AnimatedEducation/"><img src="{% static 'icon/fb.png' %}"></a></li>
+                            <!-- <li><a href="#"><img src="{% static 'icon/tw.png' %}"></a></li> -->
+                            <!-- <li><a href=><img src="{% static 'icon/lin(2).png' %}"></a></li> -->
+                            <li><a href="https://www.instagram.com/escholarfoi/?igshid=1ksblg8xaibxa"><img src="{% static 'icon/instagram2.png' %}" style="height: 42px; width: 42px;"></a></li>
                           </ul>
 
                         </div>
@@ -648,7 +1000,7 @@
 
                       <div class="col-lg-3 col-md-6 col-sm-6 ">
                         <div class="address">
-                          <a href="index.html"> <img src="images/App Icon Escholar (1).png" alt="logo" style="height: 200px; width: 200px;"></a>
+                          <a href="index.html"> <img src="{% static 'images/App Icon Escholar (1).png' %}" alt="logo" style="height: 200px; width: 200px;"></a>
                         </div>
                       </div>
                     </div>
@@ -666,34 +1018,35 @@
           </footer>
           <!-- end footer -->
           <!-- Javascript files-->
-          <script src="js/jquery.min.js"></script>
-          <script src="js/popper.min.js"></script>
-          <script src="js/bootstrap.bundle.min.js"></script>
-          <script src="js/jquery-3.0.0.min.js"></script>
-          <script src="js/plugin.js"></script>
+          <script src="{% static 'js/jquery.min.js' %}"></script>
+          <script src="{% static 'js/popper.min.js' %}"></script>
+          <script src="{% static 'js/bootstrap.bundle.min.js' %}"></script>
+          <script src="{% static 'js/jquery-3.0.0.min.js' %}"></script>
+          <script src="{% static 'js/plugin.js' %}"></script>
           <!-- sidebar -->
-          <script src="js/jquery.mCustomScrollbar.concat.min.js"></script>
-          <script src="js/custom.js"></script>
+          <script src="{% static 'js/jquery.mCustomScrollbar.concat.min.js' %}"></script>
+          <script src="{% static 'js/custom.js' %}"></script>
           <script src="https:cdnjs.cloudflare.com/ajax/libs/fancybox/2.1.5/jquery.fancybox.min.js"></script>
 
 
           <script>
 // This example adds a marker to indicate the position of Bondi Beach in Sydney,
 // Australia.
+
 function initMap() {
   var map = new google.maps.Map(document.getElementById('map'), {
     zoom: 11,
     center: {
-      lat: 40.645037,
-      lng: -73.880224
+      lat: 21.11039329338126,
+      lng: 79.10364329248206
     },
   });
 
-  var image = 'images/maps-and-flags.png';
+  var image = "{% static 'images/maps-and-flags.png' %}";
   var beachMarker = new google.maps.Marker({
     position: {
-      lat: 40.645037,
-      lng: -73.880224
+      lat: 21.11039329338126,
+      lng: 79.10364329248206
     },
     map: map,
     icon: image
@@ -702,6 +1055,7 @@ function initMap() {
 </script>
 <!-- google map js -->
 <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyA8eaHt9Dh5H57Zh0xVTqxVdBFCvFMqFjQ&callback=initMap"></script>
+
 <!-- end google map js -->
 
 </div>

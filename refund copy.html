@@ -1,0 +1,650 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <!-- basic -->
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <!-- mobile metas -->
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="viewport" content="initial-scale=1, maximum-scale=1">
+  <!-- site metas -->
+  <title>Escholar</title>
+  <meta name="keywords" content="">
+  <meta name="description" content="">
+  <meta name="author" content="">
+  <!-- fevicon -->
+  <link rel="icon" href="images/App Icon Escholar (1).png" type="image/gif" />
+  <!-- bootstrap css -->
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <script type="text/javascript" language="javascript" src="http://code.jquery.com/jquery-latest.js">
+  </script> 
+  <!-- style css -->
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/shortcodes.css">
+  <!-- Responsive-->
+  <link rel="stylesheet" href="css/responsive.css">  
+  <!-- Scrollbar Custom CSS -->
+  <link rel="stylesheet" href="css/jquery.mCustomScrollbar.min.css">
+  <!-- Tweaks for older IEs-->
+  <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/2.1.5/jquery.fancybox.min.css" media="screen">
+<!--[if lt IE 9]>
+<script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+<script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script><![endif]-->
+</head>
+<!-- body -->
+<script type="text/javascript" src="./js/textadj.js"></script>
+<body class="main-layout">
+  <!-- loader  -->
+  <!-- <div class="loader_bg">
+    <div class="loader"><img src="images/loading.gif" alt="#" /></div>
+  </div> -->
+  <!-- end loader -->
+
+  
+  
+  <main id="content" role="main">
+		<div id="description">
+
+
+  <!-- header -->
+  <header>
+    <!-- header inner -->
+    <div class="header-">
+      <div class="header">
+        <div class="container-fluid">
+          <div class="row">
+            <div class="col-xl-2 col-lg-4 col-md-4 col-sm-3 col logo_section">
+              <div class="full">
+                <div class="center-desk">
+                  <div class="logo">
+                    <a href="index.html"><img src="images/App Icon Escholar (1).png" alt="#" style="height: 100px; width: 100px;"/></a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-xl-10 col-lg-8 col-md-8 col-sm-9">
+              <div class="header_information">
+               <div class="menu-area">
+                <div class="limit-box">
+                  <nav class="main-menu ">
+                    <ul class="menu-area-main">
+                      <li class="active"> <a href="index.html">Home</a> </li>
+                      <li> <a href="#courses">Our Mission </a> </li>
+                      <li> <a href="#about">About Us</a> </li>
+                      <li> <a href="#learn">Vision</a> </li>
+                      <li> <a href="#important">Join Us</a> </li>
+                      <li> <a href="#contact">Contact Us</a> </li>
+                     <li><a href=""></a></li>
+                     <li><a href=""></a></li>
+                     <li><a href=""></a></li>
+                     <li><a href=""></a></li>
+                        <button type="button" class="decrease btn btn-sm btn-dark" value=" - ">A-</button>
+                        <button type="button" class="resetMe btn btn-sm btn-dark" value=" = ">A</button>
+                        <button type="button" class="increase btn btn-sm btn-dark" value="  +  ">A+</button>
+                        <li> <div class="dropdown">
+                          <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            language
+                          </button>
+                          <div class="dropdown-menu" aria-labelledby="dropdownMenuButton" style="background-color: rgb(44, 79, 235); ;">
+                            <a class="dropdown-item" href="#">Hindi</a>
+                            <a class="dropdown-item" href="#">Marathi</a>
+                            <!-- <a class="dropdown-item" href="#">Something else here</a> -->
+                          </div>
+                        </div>
+                      </li>
+                      </ul>
+                   </nav>
+                 </div>
+               </div> 
+               <!-- <div class="mean-last">
+                       <a href="#"><img src="images/search_icon.png" alt="#" /></a> </div>               -->
+             </div>
+           </div>
+         </div>
+       </div>
+     </div>
+      
+      
+       <script type="text/javascript">
+      $(document).ready(function(){        
+        var originalSize = $('div,p,span,li').css('font-size');         
+       // reset        
+        $(".resetMe").click(function(){           
+       $('div,p,span,li').css('font-size', originalSize);         
+        });
+      
+        // Increase Font Size          
+        $(".increase").click(function(){         
+       var currentSize = $('div,p,span,li').css('font-size');         
+       var currentSize = parseFloat(currentSize)*1.2;          
+       $('div,p,span,li').css('font-size', currentSize);         
+       return false;          
+       });        
+   
+        // Decrease Font Size       
+        $(".decrease").click(function(){        
+        var currentFontSize = $('div,p,span,li').css('font-size');        
+        var currentSize = $('div,p,span,li').css('font-size');        
+        var currentSize = parseFloat(currentSize)*0.8;        
+        $('div,p,span,li').css('font-size', currentSize);         
+        return false;         
+        });         
+      });
+      
+   </script>
+ </header>
+<style>
+    h1{
+        font-size: 30px;
+    }
+    p{
+        align-self: auto;
+        
+    }
+
+</style>
+<br>
+<br>
+<br>
+<br>
+<br>
+ 
+<!-- update  -->
+
+<style>
+  
+.galleryContainer{
+  width: 100%;
+  height: 500px;
+  max-width: 1000px;
+  margin: auto;
+  user-select: none;
+  box-shadow: 0px 0px 3px 1px #00000078;
+  padding: 10px;
+  box-sizing: border-box;
+}
+.galleryContainer .slideShowContainer{
+  width: 100%;
+  height: 90%;
+  overflow: hidden;
+  background-color: gainsboro;
+  position: relative;
+}
+.galleryContainer .slideShowContainer #playPause{
+  width: 32px;
+  height: 32px;
+  position: absolute;
+  background-image: url(images/playPause.png);
+  background-repeat: no-repeat;
+  z-index: 5;
+  background-size: cover;
+  margin: 5px;
+  cursor: pointer;
+}
+.galleryContainer .slideShowContainer #playPause:hover{
+  opacity: .7;
+}
+.galleryContainer .slideShowContainer .imageHolder{
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  opacity: 0;
+}
+.galleryContainer .slideShowContainer .imageHolder img{
+  width: 100%;
+  height: 100%;
+}
+.galleryContainer .slideShowContainer .imageHolder .captionText{
+  display: none;
+}
+
+.galleryContainer .slideShowContainer .leftArrow,.galleryContainer .slideShowContainer .rightArrow{
+  width: 50px;
+  background: #00000036;
+  position: absolute;
+  left: 0;
+  z-index: 1;
+  transition: background 0.5s;
+  height: 72px;
+  top: 50%;
+  transform: translateY(-50%);
+  border-top-right-radius: 10px;
+  border-bottom-right-radius: 10px;
+}
+.galleryContainer .slideShowContainer .rightArrow{
+  left: auto;
+  right: 0;
+  border-top-right-radius: 0px;
+  border-bottom-right-radius: 0px;
+  border-top-left-radius: 10px;
+  border-bottom-left-radius: 10px;
+}
+.galleryContainer .slideShowContainer .leftArrow:hover,.galleryContainer .slideShowContainer .rightArrow:hover{
+  background: #000000a8;
+  cursor: pointer;
+}
+.galleryContainer .arrow{
+  display: inline-block;
+  border: 3px solid white;
+  width: 10px;
+  height: 10px;
+  border-left: none;
+  border-bottom: none;
+  margin: auto;
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+}
+.galleryContainer .arrow.arrowLeft{
+  transform: rotateZ(-135deg);
+}
+.galleryContainer .arrow.arrowRight{
+  transform: rotateZ(45deg);
+}
+
+
+.galleryContainer .slideShowContainer>.captionTextHolder{
+  position: absolute;
+  bottom: 0;
+  z-index: 1;
+  color: white;
+  font-family: sans-serif;
+  font-size: 20px;
+  text-align: center;
+  width: 100%;
+  background: #00000047;
+  height: 50px;
+  line-height: 50px;
+  overflow: hidden;
+}
+.galleryContainer .slideShowContainer>.captionTextHolder>.captionText{
+  margin: 0;
+}
+
+.galleryContainer #dotsContainer{
+  width: 100%;
+  height: 10%;
+  text-align: center;
+  padding-top: 20px;
+  box-sizing: border-box;
+}
+.galleryContainer #dotsContainer .dots{
+  display: inline-block;
+  width: 15px;
+  height: 15px;
+  border-radius: 50%;
+  margin-left: 5px;
+  background-color: #bbb;
+  cursor: pointer;
+  transition:background-color 0.5s;
+}
+.galleryContainer #dotsContainer .dots:first-child{
+  margin-left: 0;
+}
+.galleryContainer #dotsContainer .dots:hover,.galleryContainer #dotsContainer .dots.active{
+  background-color: #717171;;
+}
+
+
+
+
+.galleryContainer .moveLeftCurrentSlide{
+  animation-name: moveLeftCurrent;
+  animation-duration: 0.5s;
+  animation-timing-function: linear;
+  animation-fill-mode:forwards;
+
+}
+.galleryContainer .moveLeftNextSlide{
+  animation-name: moveLeftNext;
+  animation-duration: 0.5s;
+  animation-timing-function: linear;
+  animation-fill-mode:forwards;
+}
+@keyframes moveLeftCurrent {
+  from {margin-left: 0;opacity: 1;}
+  to {margin-left: -100%;opacity: 1;}
+}
+@keyframes moveLeftNext {
+  from {margin-left: 100%;opacity: 1;}
+  to {margin-left: 0%;opacity: 1;}
+}
+
+
+.galleryContainer .moveRightCurrentSlide{
+  animation-name: moveRightCurrent;
+  animation-duration: 0.5s;
+  animation-timing-function: linear;
+  animation-fill-mode:forwards;
+}
+.galleryContainer .moveRightPrevSlide{
+  animation-name: moveRightPrev;
+  animation-duration: 0.5s;
+  animation-timing-function: linear;
+  animation-fill-mode:forwards;
+}
+@keyframes moveRightCurrent {
+  from {margin-left: 0;opacity: 1;}
+  to {margin-left: 100%;opacity: 1;}
+}
+@keyframes moveRightPrev {
+  from {margin-left: -100%;opacity: 1;}
+  to {margin-left: 0%;opacity: 1;}
+}
+.slideTextFromBottom {
+  animation-name: slideTextFromBottom;
+  animation-duration: 0.7s;
+  animation-timing-function: ease-out;
+}
+@keyframes slideTextFromBottom {
+  from {opacity: 0;margin-top: 100px}
+  to {opacity: 1;margin-top: 0px;}
+}
+.slideTextFromTop {
+  animation-name: slideTextFromTop;
+  animation-duration: 0.7s;
+  animation-timing-function: ease-out;
+}
+@keyframes slideTextFromTop {
+  from {opacity: 0;margin-top: -100px}
+  to {opacity: 1;margin-top: 0px;}
+}
+</style>
+
+
+<div class="galleryContainer">
+  <div class="slideShowContainer">
+      
+      <div onclick="plusSlides(-1)" class="nextPrevBtn leftArrow"><span class="arrow arrowLeft"></span></div>
+      <div onclick="plusSlides(1)" class="nextPrevBtn rightArrow"><span class="arrow arrowRight"></span></div>
+      <div class="captionTextHolder"><p class="captionText slideTextFromTop"></p></div>
+      <div class="imageHolder">
+          <img src="https://www.goodfreephotos.com/albums/united-states/missouri/st.-louis/missouri-st-louis-clubhouse-pond-and-scenery.jpg">1366X768
+          <p class="captionText">Pic - 01</p>
+      </div>
+      <div class="imageHolder">
+          <img src="https://www.publicdomainpictures.net/pictures/110000/velka/rolling-scenery-in-kent.jpg">
+          <p class="captionText">Pic - 02</p>
+      </div>
+      <div class="imageHolder">
+          <img src="https://www.publicdomainpictures.net/pictures/60000/velka/scenery-at-lake-jocassee.jpg">
+          <p class="captionText">Pic - 03</p>
+      </div>
+      <div class="imageHolder">
+          <img src="https://ziarmm.ro/wp-content/uploads/2016/10/vietnam.jpg">
+          <p class="captionText">Pic - 04</p>
+      </div>
+  </div>
+  <div id="dotsContainer"></div>
+</div>
+<script>
+  var slideIndex,slides,dots,captionText;
+  function initGallery(){
+      slideIndex = 0;
+      slides=document.getElementsByClassName("imageHolder");
+      slides[slideIndex].style.opacity=1;
+  
+      captionText=document.querySelector(".captionTextHolder .captionText");
+      captionText.innerText=slides[slideIndex].querySelector(".captionText").innerText;
+  
+      //disable nextPrevBtn if slide count is one
+      if(slides.length<2){
+          var nextPrevBtns=document.querySelector(".leftArrow,.rightArrow");
+          nextPrevBtns.style.display="none";
+          for (i = 0; i < nextPrevBtn.length; i++) {
+              nextPrevBtn[i].style.display="none";
+          }
+      }
+  
+      //add dots
+      dots=[];
+      var dotsContainer=document.getElementById("dotsContainer"),i;
+      for (i = 0; i < slides.length; i++) {
+          var dot=document.createElement("span");
+          dot.classList.add("dots");
+          dotsContainer.append(dot);
+          dot.setAttribute("onclick","moveSlide("+i+")");
+          dots.push(dot);
+      }
+      dots[slideIndex].classList.add("active");
+  }
+  initGallery();
+  function plusSlides(n) {
+      moveSlide(slideIndex+n);
+  }
+  function moveSlide(n){
+      var i;
+      var current,next;
+      var moveSlideAnimClass={
+            forCurrent:"",
+            forNext:""
+      };
+      var slideTextAnimClass;
+      if(n>slideIndex) {
+          if(n >= slides.length){n=0;}
+          moveSlideAnimClass.forCurrent="moveLeftCurrentSlide";
+          moveSlideAnimClass.forNext="moveLeftNextSlide";
+          slideTextAnimClass="slideTextFromTop";
+      }else if(n<slideIndex){
+          if(n<0){n=slides.length-1;}
+          moveSlideAnimClass.forCurrent="moveRightCurrentSlide";
+          moveSlideAnimClass.forNext="moveRightPrevSlide";
+          slideTextAnimClass="slideTextFromBottom";
+      }
+  
+      if(n!=slideIndex){
+          next = slides[n];
+          current=slides[slideIndex];
+          for (i = 0; i < slides.length; i++) {
+              slides[i].className = "imageHolder";
+              slides[i].style.opacity=0;
+              dots[i].classList.remove("active");
+          }
+          current.classList.add(moveSlideAnimClass.forCurrent);
+          next.classList.add(moveSlideAnimClass.forNext);
+          dots[n].classList.add("active");
+          slideIndex=n;
+          captionText.style.display="none";
+          captionText.className="captionText "+slideTextAnimClass;
+          captionText.innerText=slides[n].querySelector(".captionText").innerText;
+          captionText.style.display="block";
+      }
+  
+  }
+  var timer=null;
+  function setTimer(){
+      timer=setInterval(function () {
+          plusSlides(1) ;
+      },3000);
+  }
+  setTimer();
+  function playPauseSlides() {
+      var playPauseBtn=document.getElementById("playPause");
+      if(timer==null){
+          setTimer();
+          playPauseBtn.style.backgroundPositionY="0px"
+      }else{
+          clearInterval(timer);
+          timer=null;
+          playPauseBtn.style.backgroundPositionY="-33px"
+      }
+  }</script>
+<!-- update end -->
+
+<!-- contact -->
+<div id="contact" class="contact">
+    <div class="container-fluid padding_left2">
+      <div class="white_color">
+        <div class="row">
+  
+          <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12">
+            <div id="map">
+            </div>
+  
+          </div>
+          <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12">
+  
+            <form class="contact_bg">
+              <div class="row">
+                <div class="col-md-12">
+                  <div class="titlepage">
+                    <h2>Contact <strong class="yellow">us</strong></h2>
+                  </div>
+                  <div class="col-md-12">
+                    <input class="contactus" placeholder="Your Name" type="text" name="Your Name">
+                  </div>
+                  <div class="col-md-12">
+                    <input class="contactus" placeholder="Your Email" type="text" name="Your Email">
+                  </div>
+                  <div class="col-md-12">
+                    <input class="contactus" placeholder="Your Phone" type="text" name="Your Phone">
+                  </div>
+                  <div class="col-md-12">
+                    <textarea class="textarea" placeholder="Message" type="text" name="Message"></textarea>
+                  </div>
+                  <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12">
+                    <button class="send">Send</button>
+                  </div>
+                </div>
+              </form>
+            </div>
+          </div>
+  
+        </div>
+      </div>
+  
+      <!-- end contact -->
+  
+      <!--  footer -->
+      <footer>
+        <div class="footer ">
+          <div class="container">
+            <div class="row">
+  
+              <div class="col-md-12">
+                <form class="news">
+                  <input class="newslatter" placeholder="Email" type="text" name=" Email">
+                  <button class="submit">Subscribe</button>
+                </form>
+              </div>
+              <div class="col-md-12">
+                <h2>Newsletter</h2>
+                <span>Subscribe to our Newsletter  </span>
+              </div>
+              <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 ">
+                <div class="row">
+                  <div class="col-xl-3 col-lg-3 col-md-6 col-sm-6 ">
+                    <div class="address">
+                      <h3>Contact us </h3>
+                      <ul class="loca">
+                        <li>
+                          <a href="#"><img src="icon/loc.png" alt="#" /></a>Nagpur
+                          <br>India </li>
+                          <li>
+                            <a href="#"><img src="icon/email.png" alt="#" /></a>Escholar@gmail.com </li>
+                            <li>
+                              <a href="#"><img src="icon/call.png" alt="#" /></a>+916266584252</li>
+                            </ul>
+                            <ul class="social_link">
+                              <li><a href="https://www.facebook.com/AnimatedEducation/"><img src="icon/fb.png"></a></li>
+                              <li><a href="#"><img src="icon/tw.png"></a></li>
+                              <li><a href="https://www.instagram.com/escholarfoi/?igshid=1ksblg8xaibxa"><img src="icon/lin(2).png"></a></li>
+                              <li><a href="#"><img src="icon/instagram.png"></a></li>
+                            </ul>
+  
+                          </div>
+                        </div>
+                        <div class="col-lg-3 col-md-6 col-sm-6">
+                          <div class="address">
+                            <h3>Help Links</h3>
+                            <ul class="Menu_footer">
+                              <li class="active"> <a href="terms.html">Terms and Conditions </a> </li>
+                              <li><a href="privacy.html">Privacy Policy</a> </li>
+                              <li><a href="refund.html">Refund Policy</a> </li>
+                            </ul>
+                          </div>
+                        </div>
+                        <div class="col-lg-3 col-md-6 col-sm-6">
+                          <div class="address">
+                            <h3>Site Map</h3>
+                            <ul class="Links_footer">
+                              <li class="active">
+                              <a href="index.html">Home</a> </li>
+                      <li> <a href="#courses">Our Mission </a> </li>
+                      <li> <a href="#about">About Us</a> </li>
+                      <li> <a href="#learn">Vision</a> </li>
+                      <li> <a href="#important">Join Us</a> </li>
+                      <li> <a href="#contact">Contact Us</a> </li>
+                            </ul>
+                          </div>
+                        </div>
+  
+                        <div class="col-lg-3 col-md-6 col-sm-6 ">
+                          <div class="address">
+                            <a href="index.html"> <img src="images/App Icon Escholar (1).png" alt="logo" style="height: 200px; width: 200px;"></a>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+  
+                  </div>
+  
+                </div>
+                <div class="copyright">
+                  <div class="container">
+                    <p>Copyright © 2021 Design by <a href="https://html.design/">Bumble Tech R Solutions</a></p>
+                  </div>
+                </div>
+              </div>
+            </footer>
+            <!-- end footer -->
+            <!-- Javascript files-->
+            <script src="js/jquery.min.js"></script>
+            <script src="js/popper.min.js"></script>
+            <script src="js/bootstrap.bundle.min.js"></script>
+            <script src="js/jquery-3.0.0.min.js"></script>
+            <script src="js/plugin.js"></script>
+            <!-- sidebar -->
+            <script src="js/jquery.mCustomScrollbar.concat.min.js"></script>
+            <script src="js/custom.js"></script>
+            <script src="https:cdnjs.cloudflare.com/ajax/libs/fancybox/2.1.5/jquery.fancybox.min.js"></script>
+  
+  
+            <script>
+  // This example adds a marker to indicate the position of Bondi Beach in Sydney,
+  // Australia.
+  function initMap() {
+    var map = new google.maps.Map(document.getElementById('map'), {
+      zoom: 11,
+      center: {
+        lat: 40.645037,
+        lng: -73.880224
+      },
+    });
+  
+    var image = 'images/maps-and-flags.png';
+    var beachMarker = new google.maps.Marker({
+      position: {
+        lat: 40.645037,
+        lng: -73.880224
+      },
+      map: map,
+      icon: image
+    });
+  }
+  </script>
+  <!-- google map js -->
+  <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyA8eaHt9Dh5H57Zh0xVTqxVdBFCvFMqFjQ&callback=initMap"></script>
+  <!-- end google map js -->
+  
+  </div>
+  <!--/#description-->
+  </main>
+  
+  </body>
+  
+  </html>
